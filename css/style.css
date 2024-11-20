@@ -1,0 +1,101 @@
+body {
+    background-color: #2b3444;
+    color: #ffffff;
+}
+
+h3, p {
+    color: #ffffff;
+}
+
+.disabled-link {
+        pointer-events: none;
+        cursor: default;
+        color: gray; /* Optional: Change appearance to show it's disabled */
+    }
+
+.table-card {
+    background-color: #131822;
+    border: 1px solid #f07167;
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    font-size: 1 rem;
+    color: #f07167;
+    flex-direction: column;
+}
+
+.table-card span {
+    display: block;
+}
+
+.btn-primary {
+    background-color: #f07167;
+    border-color: #f07167;
+}
+
+.btn-primary:hover {
+    background-color: #d65b57;
+    border-color: #d65b57;
+}
+
+.sidebar {
+    width: 100px;
+    background-color: #1d2330;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.sidebar-item {
+    display: block;
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sidebar-item i {
+  font-size: 2vw;
+  color: #f07167;
+}
+
+
+.sidebar-item.active {
+    background-color: #f07167;
+}
+
+.sidebar-item.active i {
+  color: white    
+}
+
+.sidebar-item:hover {
+    background-color: #2b3444;
+    cursor: pointer;
+}
+
+.content {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.transparent-input {
+    background-color: transparent; /* Membuat latar belakang transparan */
+    border: 2px solid white; /* Ganti warna border sesuai kebutuhan */
+    color: white; /* Warna teks */
+    height: vh-5; /* Mengatur tinggi input */
+    font-size: 1.5rem; /* Mengatur ukuran font */
+}
+
+.transparent-input:focus {
+    outline: none; /* Menghapus outline saat fokus */
+    box-shadow: none;
+    border-color: #FF6500;/* Menghapus bayangan saat fokus */
+    background-color: transparent;
+    color: white;
+}
+
+.sub-text{
+    color: E0E6E9;
+    font-size: 1vw;
+}
