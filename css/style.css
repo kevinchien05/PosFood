@@ -114,6 +114,20 @@ p {
     font-size: 2vw;
 }
 
+.cart-items-detail {
+    font-size: 0.7rem;
+    white-space: nowrap;
+    /* Tidak memecah teks ke baris baru */
+    overflow: hidden;
+    /* Potong teks yang melebihi area */
+    text-overflow: ellipsis;
+    /* Tambahkan "..." di akhir */
+}
+
+.cart-items-detail2 {
+    font-size: 1rem;
+}
+
 @media (min-width: 768px) {
     .transparent-input2 {
         background-color: #131822;
@@ -146,7 +160,7 @@ p {
     }
 }
 
-.transparent-input2:focus {
+.transparent-input2:focus, .transparent-input3:focus {
     outline: none;
     /* Menghapus outline saat fokus */
     box-shadow: none;
@@ -155,11 +169,25 @@ p {
     color: white;
 }
 
-.transparent-input2::placeholder {
+.transparent-input2::placeholder, .transparent-input3::placeholder {
     color: white;
     /* Tomato color, you can use any color */
     opacity: 1;
     /* Ensure the color is fully opaque */
+}
+
+.transparent-input3 {
+    background-color: #2b3444;
+    /* Membuat latar belakang transparan */
+    border: 1px solid transparent;
+    /* Ganti warna border sesuai kebutuhan */
+    color: white;
+    /* Warna teks */
+    height: vh-5;
+    /* Mengatur tinggi input */
+    font-size: 0.5rem;
+    /* Mengatur ukuran font */
+    text-align: start;
 }
 
 .input-container {
@@ -195,12 +223,33 @@ p {
 }
 
 .menu-bar .nav-link.active {
-    color: #f05a24;
+    color: #f07167;
     /* Highlighted color */
-    border-bottom: 2px solid #f05a24;
+    border-bottom: 2px solid #f07167;
     /* Underline for active link */
 }
 
 .menu-bar .nav-link:hover {
     color: white;
+}
+
+.order {
+    background-color: #f07167;
+    color: white;
+}
+
+.dineContainer {
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 17%;
+    height: 8%;
+    border-radius: 20%;
+    background-color: #f07167;
+}
+
+.offcanvas {
+    background-color: #131822;
 }

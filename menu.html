@@ -39,7 +39,8 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h3>Jaegar Resto</h3>
                 <div class="d-flex justify-content-center align-items-center">
-                    <i class="cart-items bi bi-cart mx-3"></i>
+                    <i class="cart-items bi bi-cart mx-3" data-bs-toggle="offcanvas" data-bs-target="#cartMenu"
+                        style="cursor: pointer;"></i>
                     <div class="input-container">
                         <i class="bi bi-search"></i>
                         <input type="text" class="form-control transparent-input2 py-2" id="search"
@@ -66,34 +67,119 @@
             <!-- Change to for -->
             <div class="row">
                 <!-- Table 1 -->
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="table-card d-flex justify-content-center align-items-center">
-                        <object id="dining-svg" data="images/Dining table.svg" width="90%" height="85%"></object>
-                        <span class="mb-2">T1</span>
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card text-center bg-dark text-light p-3" style="border-radius: 20px;">
+                        <!-- Gambar bulat -->
+                        <div class="image-container mb-3">
+                            <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
+                                class="rounded-circle img-fluid"
+                                style="width: 120px; height: 120px; object-fit: cover; margin: auto;">
+                        </div>
+                        <!-- Deskripsi -->
+                        <h6 class="mb-1">Spicy seasoned seafood noodles</h6>
+                        <p class="mb-0" style="color: #b9b9b9; font-size: 1rem;">$ 2.29</p>
                     </div>
                 </div>
-                <!-- Table 2 -->
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="table-card d-flex justify-content-center align-items-center">
-                        <object id="dining-svg" data="images/Dining table.svg" width="90%" height="85%"></object>
-                        <span class="mb-2">T2</span>
+                <!-- Table 1 -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card text-center bg-dark text-light p-3" style="border-radius: 20px;">
+                        <!-- Gambar bulat -->
+                        <div class="image-container mb-3">
+                            <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
+                                class="rounded-circle img-fluid"
+                                style="width: 120px; height: 120px; object-fit: cover; margin: auto;">
+                        </div>
+                        <!-- Deskripsi -->
+                        <h6 class="mb-1">Spicy seasoned seafood noodles</h6>
+                        <p class="mb-0" style="color: #b9b9b9; font-size: 1rem;">$ 2.29</p>
                     </div>
                 </div>
-                <!-- Repeat for other tables -->
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="table-card d-flex justify-content-center align-items-center">
-                        <object id="dining-svg" data="images/Dining table.svg" width="90%" height="85%"></object>
-                        <span class="mb-2">T3</span>
+                <!-- Table 1 -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card text-center bg-dark text-light p-3" style="border-radius: 20px;">
+                        <!-- Gambar bulat -->
+                        <div class="image-container mb-3">
+                            <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
+                                class="rounded-circle img-fluid"
+                                style="width: 120px; height: 120px; object-fit: cover; margin: auto;">
+                        </div>
+                        <!-- Deskripsi -->
+                        <h6 class="mb-1">Spicy seasoned seafood noodles</h6>
+                        <p class="mb-0" style="color: #b9b9b9; font-size: 1rem;">$ 2.29</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <div class="table-card d-flex justify-content-center align-items-center">
-                        <object id="dining-svg" data="images/Dining table.svg" width="90%" height="85%"></object>
-                        <span class="mb-2">T4</span>
+                <!-- Table 1 -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card text-center bg-dark text-light p-3" style="border-radius: 20px;">
+                        <!-- Gambar bulat -->
+                        <div class="image-container mb-3">
+                            <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
+                                class="rounded-circle img-fluid"
+                                style="width: 120px; height: 120px; object-fit: cover; margin: auto;">
+                        </div>
+                        <!-- Deskripsi -->
+                        <h6 class="mb-1">Spicy seasoned seafood noodles</h6>
+                        <p class="mb-0" style="color: #b9b9b9; font-size: 1rem;">$ 2.29</p>
                     </div>
                 </div>
             </div>
 
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-end text-light" tabindex="-1" id="cartMenu" aria-labelledby="cartMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="cartMenuLabel">Order#0001</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="dineContainer text-light mb-2">
+                        <p>Dine In</p>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-7">
+                            <p>Items</p>
+                        </div>
+                        <div class="col-2 text-center">
+                            <p>Qty</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <p>Price</p>
+                        </div>
+                    </div>
+                    <!-- for start here -->
+                    <div class="itemsCartContainer mb-2">
+                        <div class="row">
+                            <div class="col-2 d-flex justify-content-center">
+                                <div class="image-container mb-3">
+                                    <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
+                                        class="rounded-circle img-fluid"
+                                        style="width: 40px; height: 40px; object-fit: cover; margin: auto;">
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="row">
+                                    <p class="cart-items-detail mb-0">Spicy seasoned seafood noodles</p>
+                                    <p class="cart-items-detail mt-0">$ 2.29</p>
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <input type="text" class="form-control transparent-input3 py-2" id="qty" placeholder=""
+                                    name="qty">
+                            </div>
+                            <div class="col-3">
+                                <p class="cart-items-detail2 text-center">$ 2.29</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9"><input type="text" class="form-control transparent-input3 py-2" id="comment"
+                                    placeholder="Order Note..." name="comment"></div>
+                            <div class="col-3 text-center" style="color: red;"><i class="bi bi-trash"></i></div>
+                        </div>
+                    </div>
+
+                    <button class="order btn btn-primary w-100">Order</button>
+                </div>
+            </div>
         </div>
     </div>
 
