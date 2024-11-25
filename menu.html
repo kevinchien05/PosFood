@@ -16,7 +16,7 @@
     <div class="d-flex">
         <div class="sidebar d-flex flex-column align-items-center">
             <a href="#" class="sidebar-item disabled-link">
-                <i class="bi-house"></i>
+                <object id="dining-svg" data="images/home.svg"></object>
             </a>
             <a href="#" class="sidebar-item active">
                 <i class="bi-house"></i>
@@ -131,7 +131,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
+                <div class="offcanvas-body d-flex flex-column">
                     <div class="dineContainer text-light mb-2">
                         <p>Dine In</p>
                     </div>
@@ -146,40 +146,55 @@
                             <p>Price</p>
                         </div>
                     </div>
-                    <!-- for start here -->
-                    <div class="itemsCartContainer mb-2">
-                        <div class="row">
-                            <div class="col-2 d-flex justify-content-center">
-                                <div class="image-container mb-3">
-                                    <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
-                                        class="rounded-circle img-fluid"
-                                        style="width: 40px; height: 40px; object-fit: cover; margin: auto;">
+
+                    <!-- Wrapper for Items with Vertical Scroll -->
+                    <div class="wrapper flex-grow-1 overflow-y mb-3"
+                        style="overflow-y: auto; overflow-x: hidden; max-height: calc(100vh - 200px);">
+                        <!-- Items Start Here -->
+                        <div class="itemsCartContainer mb-2">
+                            <div class="row">
+                                <div class="col-2 d-flex justify-content-center">
+                                    <div class="image-container mb-3">
+                                        <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
+                                            class="rounded-circle img-fluid"
+                                            style="width: 40px; height: 40px; object-fit: cover; margin: auto;">
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="row">
+                                        <p class="cart-items-detail mb-0">Spicy seasoned seafood noodles</p>
+                                        <p class="cart-items-detail mt-0">$ 2.29</p>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <input type="text" class="form-control transparent-input3 py-2" id="qty"
+                                        placeholder="" name="qty">
+                                </div>
+                                <div class="col-3">
+                                    <p class="cart-items-detail2 text-center">$ 2.29</p>
                                 </div>
                             </div>
-                            <div class="col-5">
-                                <div class="row">
-                                    <p class="cart-items-detail mb-0">Spicy seasoned seafood noodles</p>
-                                    <p class="cart-items-detail mt-0">$ 2.29</p>
+                            <div class="row">
+                                <div class="col-9">
+                                    <input type="text" class="form-control transparent-input3 py-2" id="comment"
+                                        placeholder="Order Note..." name="comment">
+                                </div>
+                                <div class="col-3 text-center" style="color: red;">
+                                    <i class="bi bi-trash"></i>
                                 </div>
                             </div>
-                            <div class="col-2 text-center">
-                                <input type="text" class="form-control transparent-input3 py-2" id="qty" placeholder=""
-                                    name="qty">
-                            </div>
-                            <div class="col-3">
-                                <p class="cart-items-detail2 text-center">$ 2.29</p>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-9"><input type="text" class="form-control transparent-input3 py-2" id="comment"
-                                    placeholder="Order Note..." name="comment"></div>
-                            <div class="col-3 text-center" style="color: red;"><i class="bi bi-trash"></i></div>
-                        </div>
+                        <!-- Additional Items Here (Repeat itemsCartContainer for more items) -->
                     </div>
 
-                    <button class="order btn btn-primary w-100">Order</button>
+                    <!-- Order Button -->
+                    <div>
+                        <button class="order btn btn-primary w-100">Order</button>
+                    </div>
                 </div>
             </div>
+
+
         </div>
     </div>
 
