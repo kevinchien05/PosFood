@@ -14,7 +14,34 @@
 <body class="text-light">
     <!-- Sidebar -->
     <div class="d-flex">
-        <div class="sidebar d-flex flex-column align-items-center">
+        <div class="sidebar d-none d-md-flex flex-column align-items-center ">
+            <a href="#" class="sidebar-item disabled-link">
+                <object id="dining-svg" data="images/home.svg"></object>
+            </a>
+            <a href="#" class="sidebar-item active">
+                <i class="bi-house"></i>
+            </a>
+            <a href="#" class="sidebar-item">
+                <i class="bi-menu-button-wide"></i>
+            </a>
+            <a href="#" class="sidebar-item">
+                <i class="bi-pie-chart"></i>
+            </a>
+            <a href="#" class="sidebar-item">
+                <i class="bi-gear"></i>
+            </a>
+            <a href="#" class="sidebar-item">
+                <i class="bi-box-arrow-left"></i>
+            </a>
+        </div>
+
+        <!-- Tombol untuk menampilkan sidebar pada layar kecil -->
+        <button class="btnMenu d-md-none text-light" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+            <i class="bi bi-list"></i> <!-- Menggunakan ikon dari Bootstrap Icons -->
+        </button>
+
+        <!-- Sidebar yang dapat collapsible pada layar kecil -->
+        <div class="offcanvas collapse d-md-none d-flex flex-column align-items-center" id="sidebar">
             <a href="#" class="sidebar-item disabled-link">
                 <object id="dining-svg" data="images/home.svg"></object>
             </a>
@@ -176,7 +203,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-9">
-                                    <input type="text" class="form-control transparent-input3 py-2" id="comment"
+                                    <input type="text" class="form-control transparent-input3 py-2 text-center" id="comment"
                                         placeholder="Order Note..." name="comment">
                                 </div>
                                 <div class="col-3 text-center" style="color: red;">

@@ -44,8 +44,9 @@ p {
 .sidebar {
     width: 100px;
     background-color: #1d2330;
-    height: 100%;
     padding-top: 20px;
+    min-height: 100vmax;
+    max-height: 100vmax;
 }
 
 .sidebar-item {
@@ -265,7 +266,7 @@ p {
 }
 .image-container {
     width: 100%;
-    height: 50%;
+    height: 30%;
 }
 
 img {
@@ -290,5 +291,46 @@ img {
     /* Mengatur tinggi input */
     font-size: 1rem;
     /* Mengatur ukuran font */
+}
 
+.addContainer {
+    background-color: #131822;
+    border: 1px solid transparent;
+    padding: 0px 20px;
+    color: white;
+    width: 70px;
+    height: 70px;
+}
+
+.addContainer:hover {
+    border: 1px solid white;
+}
+
+.qntContainer {
+    width: 70px;
+    height: 70px;
+}
+
+.buttonAdd{
+    width: 80%;
+    height: 100%;
+    background-color: #f07167;
+}
+
+/* Styling untuk tombol toggle */
+button.btnMenu {
+    position: fixed; /* Tombol tetap berada di posisi fixed */
+    top: 20px; /* Jarak tombol dari atas */
+    left: 20px; /* Jarak tombol dari kiri */
+    z-index: 1050; /* Agar tombol tetap di atas sidebar dan konten */
+    border-radius: 50%; /* Membuat tombol berbentuk bulat */
+    padding: 10px; /* Memberikan padding pada tombol */
+    background-color: transparent; /* Warna latar belakang tombol */
+    color: white; /* Warna ikon */
+    border: none;
+}
+
+/* Agar tombol tidak mengganggu layout */
+button.btnMenu i {
+    font-size: 20px; /* Ukuran ikon */
 }
