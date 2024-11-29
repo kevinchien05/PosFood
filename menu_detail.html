@@ -36,12 +36,13 @@
         </div>
 
         <!-- Tombol untuk menampilkan sidebar pada layar kecil -->
-        <button class="btnMenu d-md-none text-light" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+        <button class="btnMenu d-md-none text-light" id="btnMenu" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
             <i class="bi bi-list"></i> <!-- Menggunakan ikon dari Bootstrap Icons -->
         </button>
 
         <!-- Sidebar yang dapat collapsible pada layar kecil -->
-        <div class="offcanvas collapse d-md-none d-flex flex-column align-items-center" id="sidebar">
+        <div class="offcanvas d-md-none d-flex flex-column align-items-center" id="sidebar">
             <a href="#" class="sidebar-item disabled-link">
                 <object id="dining-svg" data="images/home.svg"></object>
             </a>
@@ -63,6 +64,8 @@
         </div>
 
         <div class="container-fluid p-3 flex-grow-1">
+            <button class="cancelButton d-flex justify-content-start align-items-center text-light ms-5 m-md-0">
+                <i class="bi-x h3 m-0"></i></button>
             <div class="image-container d-flex justify-content-center mb-3 p-3">
                 <img src="images/Image 1.png" alt="test">
             </div>
@@ -78,16 +81,16 @@
                     </div>
                     <div class="row qnt-wrapper d-flex justify-content-center align-items-center">
                         <div class="col-auto px-2">
-                            <button class="addContainer">
+                            <button class="addContainer" onclick="minClick()">
                                 <p class="h1">-</p>
                             </button>
                         </div>
                         <div class="col-auto px-2">
-                            <input type="text" class="addContainer form-control transparent-input4 text-center" id="qty"
-                                placeholder="" name="qty">
+                            <input type="text" class="addContainer form-control transparent-input4 text-center" id="qtyDetail"
+                                placeholder="" name="qty" value="1">
                         </div>
                         <div class="col-auto px-2">
-                            <button class="addContainer">
+                            <button class="addContainer" onclick="addClick()">
                                 <p class="h1">+</p>
                             </button>
                         </div>
@@ -101,6 +104,8 @@
             </div>
         </div>
     </div>
+
+    <script src="js/button.js"></script>
 
 </body>
 
