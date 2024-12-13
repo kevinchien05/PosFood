@@ -163,7 +163,8 @@ p {
 
 .transparent-input2:focus,
 .transparent-input3:focus,
-.transparent-input4:focus {
+.transparent-input4:focus,
+.transparent-input5:focus {
     outline: none;
     /* Menghapus outline saat fokus */
     box-shadow: none;
@@ -174,7 +175,8 @@ p {
 
 .transparent-input2::placeholder,
 .transparent-input3::placeholder,
-.transparent-input4::placeholder {
+.transparent-input4::placeholder,
+.transparent-input5::placeholder {
     color: white;
     /* Tomato color, you can use any color */
     opacity: 1;
@@ -255,6 +257,18 @@ p {
     background-color: #f07167;
 }
 
+.dinePaymentContainer {
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: #f07167;
+}
+
 .offcanvas {
     background-color: #131822;
     height: 100%;
@@ -299,6 +313,35 @@ img {
     /* Mengatur tinggi input */
     font-size: 1rem;
     /* Mengatur ukuran font */
+}
+
+
+.transparent-input5 {
+    background-color: #131822;
+    border: 1px solid transparent;
+    /* Membuat latar belakang transparan */
+    color: white;
+    /* Warna teks */
+    height: vh-5;
+    /* Mengatur tinggi input */
+    font-size: 1rem;
+    width: 50%;
+    /* Mengatur ukuran font */
+}
+
+@media (max-width: 768px) {
+    .transparent-input5 {
+        background-color: #131822;
+        border: 1px solid transparent;
+        /* Membuat latar belakang transparan */
+        color: white;
+        /* Warna teks */
+        height: vh-5;
+        /* Mengatur tinggi input */
+        font-size: 1rem;
+        /* Mengatur ukuran font */
+        width: 80%;
+    }
 }
 
 .addContainer {
@@ -383,4 +426,22 @@ button.btnMenu i {
 
 option {
     color: black;
+}
+
+.imgPayment {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+
+    /* Bootstrap 'md' breakpoint */
+    .imgPayment {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        margin: auto;
+    }
 }
