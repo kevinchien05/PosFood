@@ -1,4 +1,4 @@
-body {
+body, footer {
     background-color: #2b3444;
     color: #ffffff;
 }
@@ -444,4 +444,8 @@ option {
         object-fit: cover;
         margin: auto;
     }
+}
+
+.totalText {
+    color: gray;
 }
