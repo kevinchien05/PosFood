@@ -18,10 +18,10 @@
             <a href="#" class="sidebar-item disabled-link">
                 <object id="dining-svg" data="images/home.svg"></object>
             </a>
-            <a href="#" class="sidebar-item active">
+            <a href="/home.html" class="sidebar-item active">
                 <i class="bi-house"></i>
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="/menu_available.html" class="sidebar-item">
                 <i class="bi-menu-button-wide"></i>
             </a>
             <a href="#" class="sidebar-item">
@@ -30,7 +30,7 @@
             <a href="#" class="sidebar-item">
                 <i class="bi-gear"></i>
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="/login.html" class="sidebar-item">
                 <i class="bi-box-arrow-left"></i>
             </a>
         </div>
@@ -46,10 +46,10 @@
             <a href="#" class="sidebar-item disabled-link">
                 <object id="dining-svg" data="images/home.svg"></object>
             </a>
-            <a href="#" class="sidebar-item active">
+            <a href="/home.html" class="sidebar-item active">
                 <i class="bi-house"></i>
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="/menu_available.html" class="sidebar-item">
                 <i class="bi-menu-button-wide"></i>
             </a>
             <a href="#" class="sidebar-item">
@@ -58,7 +58,7 @@
             <a href="#" class="sidebar-item">
                 <i class="bi-gear"></i>
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="/login.html" class="sidebar-item">
                 <i class="bi-box-arrow-left"></i>
             </a>
         </div>
@@ -96,7 +96,7 @@
             <div class="row">
                 <!-- Table 1 -->
                 <div class="col-lg-3 col-md-4 col-6 mb-4">
-                    <div class="card text-center bg-dark text-light p-3" style="border-radius: 20px;">
+                    <div class="card text-center bg-dark text-light p-3" style="border-radius: 20px;" onclick="detail()">
                         <!-- Gambar bulat -->
                         <div class="image-container mb-3">
                             <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
@@ -227,6 +227,11 @@
     </div>
 
     <script src="js/button.js"></script>
+    <script>
+        let detail = () => {
+            window.location = "/menu_detail.html"
+        }
+    </script>
 
 </body>
 

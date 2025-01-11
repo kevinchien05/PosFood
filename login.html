@@ -39,14 +39,15 @@
                 <input type="password" class="form-control transparent-input py-2" id="pwd" placeholder="" name="pswd">
               </div>
               <div class="text-end pb-4">
-                <a href="#" class="text-white text-decoration-none fs-4">Forget Password?</a>
+                <a href="/forget_page.html" class="text-white text-decoration-none fs-4">Forget Password?</a>
               </div>
               <div class="d-grid pb-2">
-                <button type="submit" class="btn py-4 rounded-5 text-white fs-4"
-                  style="background-color: #EA7C69">Login</button>
+                <!-- button type change to button from submit -->
+                <button type="button" class="btn py-4 rounded-5 text-white fs-4"
+                  style="background-color: #EA7C69" onclick="login()">Login</button>
               </div>
               <div class="text-start pb-5 fs-4">
-                <p>Don't have account ? <a href="#" class="text-white">Sign Up</a></p>
+                <p>Don't have account ? <a href="/register.html" class="text-white">Sign Up</a></p>
               </div>
               <div class="pb-5">
 
@@ -64,6 +65,11 @@
     </div>
   </div>
 
+  <script>
+    let login = () => {
+      window.location = "/home.html";
+    }
+  </script>
 </body>
 
 </html>

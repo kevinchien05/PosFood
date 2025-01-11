@@ -57,7 +57,8 @@
                 <input type="password" class="form-control transparent-input py-2" id="pwd" placeholder="" name="pswd">
               </div>
               <div class="d-grid pb-2">
-                <button type="submit" class="btn py-4 rounded-5 text-white fs-4" style="background-color: #EA7C69">Reset
+                <!-- change button type to button from submit -->
+                <button type="button" onclick="forget()" class="btn py-4 rounded-5 text-white fs-4" style="background-color: #EA7C69">Reset
                   Password</button>
               </div>
               <div class="pb-5">
@@ -75,6 +76,12 @@
 
     </div>
   </div>
+
+  <script>
+    let forget = () => {
+      window.location = "/login.html";
+    }
+  </script>
 
 </body>
 

@@ -50,7 +50,8 @@
                 <input type="password" class="form-control transparent-input py-2" id="pwd" placeholder="" name="pswd">
               </div>
               <div class="d-grid pb-2">
-                <button type="submit" class="btn py-4 rounded-5 text-white fs-4" style="background-color: #EA7C69">Sign
+                <!-- button type to button from submit -->
+                <button type="button" onclick="register()" class="btn py-4 rounded-5 text-white fs-4" style="background-color: #EA7C69">Sign
                   Up</button>
               </div>
               <div class="pb-5">
@@ -69,6 +70,11 @@
     </div>
   </div>
 
+  <script>
+    let register = () => {
+      window.location = "/login.html"
+    }
+  </script>
 </body>
 
 </html>

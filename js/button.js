@@ -22,3 +22,7 @@ minClick = () => {
         qntDetail.value = parseInt(qntDetail.value) - parseInt(1);
     }
 }
+
+change = (page) => {
+    window.location = `/${page}`;
+}

@@ -16,10 +16,10 @@
             <a href="#" class="sidebar-item disabled-link">
                 <object id="dining-svg" data="images/home.svg"></object>
             </a>
-            <a href="#" class="sidebar-item active">
+            <a href="/home.html" class="sidebar-item active">
                 <i class="bi-house"></i>
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="/menu_available.html" class="sidebar-item">
                 <i class="bi-menu-button-wide"></i>
             </a>
             <a href="#" class="sidebar-item">
@@ -28,7 +28,7 @@
             <a href="#" class="sidebar-item">
                 <i class="bi-gear"></i>
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="/login.html" class="sidebar-item">
                 <i class="bi-box-arrow-left"></i>
             </a>
         </div>
@@ -44,10 +44,10 @@
             <a href="#" class="sidebar-item disabled-link">
                 <object id="dining-svg" data="images/home.svg"></object>
             </a>
-            <a href="#" class="sidebar-item active">
+            <a href="/home.html" class="sidebar-item active">
                 <i class="bi-house"></i>
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="/menu_available.html" class="sidebar-item">
                 <i class="bi-menu-button-wide"></i>
             </a>
             <a href="#" class="sidebar-item">
@@ -56,7 +56,7 @@
             <a href="#" class="sidebar-item">
                 <i class="bi-gear"></i>
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="/login.html" class="sidebar-item">
                 <i class="bi-box-arrow-left"></i>
             </a>
         </div>
@@ -64,7 +64,7 @@
     <div class="container-fluid ps-5 p-3 p-md-3">
         <div class="d-flex justify-content-between align-items-center">
             <h3>Jaegar Resto</h3>
-            <button class="btn btn-primary">Add Takeaway Order</button>
+            <button class="btn btn-primary" onclick="order()">Add Takeaway Order</button>
         </div>
         <p class="sub-text mb-4">Tuesday, 17 Sep 2024</p>
         <h4 class="mb-4">Choose Tables</h4>
@@ -73,8 +73,8 @@
         <div class="row">
             <!-- Table 1 -->
             <div class="col-6 col-md-3 mb-4">
-                <div class="table-card d-flex justify-content-center align-items-center">
-                    <object id="dining-svg" data="images/Dining table.svg" width="90%" height="85%"></object>
+                <div class="table-card d-flex justify-content-center align-items-center" onclick="order()">
+                    <object id="dining-svg" data="images/Dining table.svg" width="90%" height="85%" style="pointer-events: none;"></object>
                     <span class="mb-2">T1</span>
                 </div>
             </div>
@@ -104,6 +104,11 @@
     </div>
 
     <script src="js/button.js"></script>
+    <script>
+        let order = () => {
+            window.location = "/menu.html";
+        }
+    </script>
 
 </body>
 </html>
