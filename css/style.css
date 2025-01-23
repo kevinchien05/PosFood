@@ -247,26 +247,12 @@ p {
 
 .dineContainer {
     font-size: 1rem;
-    padding: 5px;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     width: 20%;
     height: 8%;
     border-radius: 20%;
-    background-color: #f07167;
-}
-
-.dinePaymentContainer {
-    font-size: 1rem;
-    padding: 5px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 40px;
-    border-radius: 20%;
-    background-color: #f07167;
 }
 
 .offcanvas {
@@ -448,4 +434,44 @@ option {
 
 .totalText {
     color: gray;
+}
+
+.paymentPrimary {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: #EA7C69;
+    width: 50%;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.paymentPrimary:hover {
+    background-color: #E36744;
+    border: 3px solid #EA7C69;
+}
+
+.paymentSecondary {
+    border: 3px solid #EA7C69;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 50%;
+    height: 50px;
+    color: #EA7C69;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.paymentSecondary:hover {
+    border: 3px solid white;
+    color: white;
 }
