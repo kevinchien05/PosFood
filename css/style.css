@@ -661,7 +661,7 @@ option {
     border: 3px solid #EA7C69;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .itemContainerPayment2 {
         font-size: 1rem;
         white-space: nowrap;
@@ -672,7 +672,7 @@ option {
         /* Tambahkan "..." di akhir */
     }
 }
-@media (min-width: 0px) and (max-width: 767px){
+@media (min-width: 0px) and (max-width: 768px){
     .itemContainerPayment2 {
         font-size: 0.6rem;
         white-space: nowrap;

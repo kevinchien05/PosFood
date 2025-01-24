@@ -18,7 +18,7 @@
             <a href="#" class="sidebar-item disabled-link">
                 <object id="dining-svg" data="images/home.svg"></object>
             </a>
-            <a href="/home.html" class="sidebar-item active">
+            <a href="/home.html" class="sidebar-item">
                 <i class="bi-house"></i>
             </a>
             <a href="/menu_available.html" class="sidebar-item">
@@ -27,13 +27,13 @@
             <a href="#" class="sidebar-item">
                 <i class="bi-pie-chart"></i>
             </a>
-            <a href="/order_list.html" class="sidebar-item">
+            <a href="/order_list.html" class="sidebar-item active">
                 <i class="bi-journal-richtext"></i>
             </a>
             <a href="#" class="sidebar-item">
                 <i class="bi-gear"></i>
             </a>
-            <a href="/login.html" class="sidebar-item">
+            <a href="#" class="sidebar-item">
                 <i class="bi-box-arrow-left"></i>
             </a>
         </div>
@@ -49,7 +49,7 @@
             <a href="#" class="sidebar-item disabled-link">
                 <object id="dining-svg" data="images/home.svg"></object>
             </a>
-            <a href="/home.html" class="sidebar-item active">
+            <a href="/home.html" class="sidebar-item">
                 <i class="bi-house"></i>
             </a>
             <a href="/menu_available.html" class="sidebar-item">
@@ -58,61 +58,85 @@
             <a href="#" class="sidebar-item">
                 <i class="bi-pie-chart"></i>
             </a>
-            <a href="/order_list.html" class="sidebar-item">
+            <a href="/order_list.html" class="sidebar-item active">
                 <i class="bi-journal-richtext"></i>
             </a>
             <a href="#" class="sidebar-item">
                 <i class="bi-gear"></i>
             </a>
-            <a href="/login.html" class="sidebar-item">
+            <a href="#" class="sidebar-item">
                 <i class="bi-box-arrow-left"></i>
             </a>
         </div>
 
-        <div class="container-fluid p-3 flex-grow-1">
-            <button onclick="change('menu.html')" class="cancelButton d-flex justify-content-start align-items-center text-light ms-5 m-md-0">
-                <i class="bi-x h3 m-0"></i></button>
-            <div class="image-container d-flex justify-content-center mb-3 p-3">
-                <img src="images/Image 1.png" alt="test">
-            </div>
-            <div class="detail-container">
-                <div class="row">
-                    <h2 class="primaryText text-light">Spicy seasoned seafood noodles</h2>
-                    <h3 class="secondaryText">$ 2.29</h3>
-                    <h3 class="primaryText text-light pb-2">Spicy Noodles with Shrimp</h3>
-                    <h3 class="primaryText text-light pb-2">Order Note</h3>
-                    <div class="input-wrapper pb-3">
-                        <input type="text" class="form-control transparent-input4 py-3" id="note"
-                            placeholder="Order Note..." name="note">
+        <div class="container-fluid ps-5 p-3 p-md-3">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h3>Order List</h3>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="input-container">
+                        <i class="bi bi-search"></i>
+                        <input type="text" class="form-control transparent-input2 py-2" id="search"
+                            placeholder="Search for order" name="Username">
                     </div>
-                    <div class="row qnt-wrapper d-flex justify-content-center align-items-center">
-                        <div class="col-auto px-2">
-                            <button class="addContainer" onclick="minClick()">
-                                <p class="h1">-</p>
-                            </button>
-                        </div>
-                        <div class="col-auto px-2">
-                            <input type="text" class="addContainer form-control transparent-input4 text-center" id="qtyDetail"
-                                placeholder="" name="qty" value="1">
-                        </div>
-                        <div class="col-auto px-2">
-                            <button class="addContainer" onclick="addClick()">
-                                <p class="h1">+</p>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="container mt-5 mb-5 d-flex justify-content-center">
-                        <button onclick="change('menu.html')" class="buttonAdd h2">Add to Order</button>
-                    </div>
-
                 </div>
+            </div>
+
+            <div class="row mb-0">
+                <div class="col-2">
+                    <p>Order ID</p>
+                </div>
+                <div class="col-2">
+                    <p>Table</p>
+                </div>
+                <div class="col-2">
+                    <p>Date</p>
+                </div>
+                <div class="col-3">
+                    <p>Food</p>
+                </div>
+                <div class="col-1">
+                    <p>Qty</p>
+                </div>
+                <div class="col-2">
+                </div>
+            </div>
+            <hr class="mt-0">
+
+            <!-- Change to for -->
+            <div class="itemContainerPayment2 mb-2">
+                <div class="row">
+                    <div class="col-2 d-flex align-items-center">
+                        <p>#0001</p>
+                    </div>
+                    <div class="col-2 d-flex align-items-center">
+                        <p>T01</p>
+                    </div>
+                    <div class="col-2 d-flex align-items-center">
+                        <p>24/01/2025</p>
+                    </div>
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="row itemContainerPayment2">
+                            <p>Spicy noodles</p>
+                            <p>Spicy noodles</p>
+                        </div>
+                    </div>
+                    <div class="col-1 d-flex align-items-center">
+                        <div class="row">
+                            <p>4</p>
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="col-2 d-flex align-items-center text-start">
+                        <button class="mb-3 addOrderButton">View</button>
+                    </div>
+                </div>
+                <hr class="mt-0">
             </div>
         </div>
     </div>
 
     <script src="js/button.js"></script>
-</body>
 
+</body>
 
 </html>
