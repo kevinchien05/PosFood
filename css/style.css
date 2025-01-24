@@ -437,7 +437,7 @@ option {
     color: gray;
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
     .paymentPrimary {
         border: 3px solid transparent;
         border-radius: 10px;
@@ -477,7 +477,7 @@ option {
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
     .paymentPrimary {
         border: 3px solid transparent;
         border-radius: 10px;
@@ -518,7 +518,7 @@ option {
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
     .paymentPrimary {
         border: 3px solid transparent;
         border-radius: 10px;
@@ -644,14 +644,42 @@ option {
 
 .addOrderButton {
     border: 3px solid transparent;
-        border-radius: 10px;
-        background-color: #EA7C69;
-        width: 80%;
-        height: 30px;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        cursor: pointer;
-        padding: 0;
-        margin: 0;
+    border-radius: 10px;
+    background-color: #EA7C69;
+    width: 80%;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.addOrderButton:hover {
+    background-color: #E36744;
+    border: 3px solid #EA7C69;
+}
+
+@media (min-width: 768px) {
+    .itemContainerPayment2 {
+        font-size: 1rem;
+        white-space: nowrap;
+        /* Tidak memecah teks ke baris baru */
+        overflow: hidden;
+        /* Potong teks yang melebihi area */
+        text-overflow: ellipsis;
+        /* Tambahkan "..." di akhir */
+    }
+}
+@media (min-width: 0px) and (max-width: 767px){
+    .itemContainerPayment2 {
+        font-size: 0.6rem;
+        white-space: nowrap;
+        /* Tidak memecah teks ke baris baru */
+        overflow: hidden;
+        /* Potong teks yang melebihi area */
+        text-overflow: ellipsis;
+        /* Tambahkan "..." di akhir */
+    }
 }
