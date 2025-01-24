@@ -1,4 +1,5 @@
-body, footer {
+body,
+footer {
     background-color: #2b3444;
     color: #ffffff;
 }
@@ -436,42 +437,221 @@ option {
     color: gray;
 }
 
-.paymentPrimary {
+@media (min-width: 768px) and (max-width: 1023px){
+    .paymentPrimary {
+        border: 3px solid transparent;
+        border-radius: 10px;
+        background-color: #EA7C69;
+        width: 70%;
+        height: 50px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    .paymentPrimary:hover {
+        background-color: #E36744;
+        border: 3px solid #EA7C69;
+    }
+
+    .paymentSecondary {
+        border: 3px solid #EA7C69;
+        border-radius: 10px;
+        background-color: transparent;
+        width: 70%;
+        height: 50px;
+        color: #EA7C69;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    .paymentSecondary:hover {
+        border: 3px solid white;
+        color: white;
+    }
+}
+
+@media (min-width: 1024px){
+    .paymentPrimary {
+        border: 3px solid transparent;
+        border-radius: 10px;
+        background-color: #EA7C69;
+        width: 60%;
+        height: 50px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    .paymentPrimary:hover {
+        background-color: #E36744;
+        border: 3px solid #EA7C69;
+    }
+
+    .paymentSecondary {
+        border: 3px solid #EA7C69;
+        border-radius: 10px;
+        background-color: transparent;
+        width: 60%;
+        height: 50px;
+        color: #EA7C69;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    .paymentSecondary:hover {
+        border: 3px solid white;
+        color: white;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .paymentPrimary {
+        border: 3px solid transparent;
+        border-radius: 10px;
+        background-color: #EA7C69;
+        width: 70%;
+        height: 50px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    .paymentPrimary:hover {
+        background-color: #E36744;
+        border: 3px solid #EA7C69;
+    }
+
+    .paymentSecondary {
+        border: 3px solid #EA7C69;
+        border-radius: 10px;
+        background-color: transparent;
+        width: 70%;
+        height: 50px;
+        color: #EA7C69;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    .paymentSecondary:hover {
+        border: 3px solid white;
+        color: white;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .paymentPrimary {
+        border: 3px solid transparent;
+        border-radius: 10px;
+        background-color: #EA7C69;
+        width: 80%;
+        height: 50px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    .paymentPrimary:hover {
+        background-color: #E36744;
+        border: 3px solid #EA7C69;
+    }
+
+    .paymentSecondary {
+        border: 3px solid #EA7C69;
+        border-radius: 10px;
+        background-color: transparent;
+        width: 80%;
+        height: 50px;
+        color: #EA7C69;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    .paymentSecondary:hover {
+        border: 3px solid white;
+        color: white;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+    .paymentPrimary {
+        border: 3px solid transparent;
+        border-radius: 10px;
+        background-color: #EA7C69;
+        width: 100%;
+        height: 50px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    .paymentPrimary:hover {
+        background-color: #E36744;
+        border: 3px solid #EA7C69;
+    }
+
+    .paymentSecondary {
+        border: 3px solid #EA7C69;
+        border-radius: 10px;
+        background-color: transparent;
+        width: 100%;
+        height: 50px;
+        color: #EA7C69;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    .paymentSecondary:hover {
+        border: 3px solid white;
+        color: white;
+    }
+}
+
+.smallText {
+    font-size: 0.8rem;
+}
+
+.addOrderButton {
     border: 3px solid transparent;
-    border-radius: 10px;
-    background-color: #EA7C69;
-    width: 50%;
-    height: 50px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-}
-
-.paymentPrimary:hover {
-    background-color: #E36744;
-    border: 3px solid #EA7C69;
-}
-
-.paymentSecondary {
-    border: 3px solid #EA7C69;
-    border-radius: 10px;
-    background-color: transparent;
-    width: 50%;
-    height: 50px;
-    color: #EA7C69;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-}
-
-.paymentSecondary:hover {
-    border: 3px solid white;
-    color: white;
+        border-radius: 10px;
+        background-color: #EA7C69;
+        width: 80%;
+        height: 30px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
 }
