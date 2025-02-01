@@ -683,3 +683,23 @@ option {
         /* Tambahkan "..." di akhir */
     }
 }
+
+.settingContainer {
+    background-color: #1F1D2B;
+    min-height: 95vmax;
+    max-height: 100vmax;
+}
+
+.primaryTextSetting{
+    font-size: 1rem;
+    color: white;
+}
+
+.secondaryText{
+    color: #ABBBC2;
+    font-size: 0.7rem;
+}
+ .settingItems.active{
+    background-color: wheat;
+    height: auto;
+ }
