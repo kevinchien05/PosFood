@@ -32,6 +32,10 @@ p {
     display: block;
 }
 
+.table-card:hover{
+    transform: scale(1.05);
+}
+
 .btn-primary {
     background-color: #f07167;
     border-color: #f07167;
@@ -721,5 +725,82 @@ option {
 }
 
 .primaryTextSetting.active {
+    color: #EA7C69;
+}
+
+.cardSetting {
+    background-color: rgba(255, 107, 107, 0.1);
+    border: 2px dashed #ff6b6b;
+    border-radius: 10px;
+    padding: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cardSetting:hover {
+    background-color: rgba(255, 107, 107, 0.2);
+    transform: scale(1.05);
+}
+
+.cardItem {
+    border: 2px solid #393C49;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body i {
+    font-size: 2rem;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.btn-outline-light {
+    background: rgba(255, 107, 107, 0.3);
+    width: 100%;
+    border-color: transparent;
+    color: #ff6b6b;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.forgetLink{
+    color: white;
+    text-decoration: none;
+}
+
+.forgetLink:hover{
+    text-decoration: underline;
+
+}
+
+.signLink{
+    color: white;
+}
+
+.signLink:hover{
+    text-decoration: none;
+}
+
+.loginButton {
+    background-color: #EA7C69;
+    border: 1px solid transparent;
+    color: white;
+}
+
+.loginButton:hover {
+    background-color: transparent;
+    border: 1px solid #EA7C69;
     color: #EA7C69;
 }
