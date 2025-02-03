@@ -671,8 +671,19 @@ option {
         text-overflow: ellipsis;
         /* Tambahkan "..." di akhir */
     }
+
+    .primaryTextSetting {
+        font-size: 0.9rem;
+        color: white;
+    }
+
+    .secondaryText {
+        color: #ABBBC2;
+        font-size: 0.7rem;
+    }
 }
-@media (min-width: 0px) and (max-width: 768px){
+
+@media (min-width: 0px) and (max-width: 768px) {
     .itemContainerPayment2 {
         font-size: 0.6rem;
         white-space: nowrap;
@@ -682,24 +693,33 @@ option {
         text-overflow: ellipsis;
         /* Tambahkan "..." di akhir */
     }
+
+    .primaryTextSetting {
+        font-size: 0.6rem;
+        color: white;
+    }
+
+    .secondaryText {
+        color: #ABBBC2;
+        font-size: 0.4rem;
+    }
 }
 
 .settingContainer {
     background-color: #1F1D2B;
     min-height: 95vmax;
     max-height: 100vmax;
+    border-radius: 10px;
 }
 
-.primaryTextSetting{
-    font-size: 1rem;
-    color: white;
+.settingItems {
+    border-bottom: 2px solid #393C49;
 }
 
-.secondaryText{
-    color: #ABBBC2;
-    font-size: 0.7rem;
+.settingItems.active, .settingItems:hover {
+    background: rgba(255, 107, 107, 0.3);
 }
- .settingItems.active{
-    background-color: wheat;
-    height: auto;
- }
+
+.primaryTextSetting.active {
+    color: #EA7C69;
+}
