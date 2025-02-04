@@ -97,7 +97,8 @@
                         </div>
                         <div class="row d-flex pb-3">
                             <div class="col-md-3 col-4"></div>
-                            <div class="col-md-9 col-8 ps-md-2 ps-0 secondaryText">Manage your product, pricing, etc</div>
+                            <div class="col-md-9 col-8 ps-md-2 ps-0 secondaryText">Manage your product, pricing, etc
+                            </div>
                         </div>
                     </div>
                     <div class="settingItems pt-3 pe-1">
@@ -126,36 +127,18 @@
                     </div>
                 </div>
                 <div class="col-9 settingContainer ms-3">
-                    <h5 class="pt-4 ps-4 pb-3">Table Management</h5>
+                    <h5 class="pt-4 ps-4 pb-3">Edit Table</h5>
                     <div class="row px-4">
-                        <div class="col-lg-4 col-6 pb-3">
-                            <div class="cardSetting border-dashed text-center h-100 d-flex align-items-center" onclick="change(`add_table.html`)">
-                                <div class="card-body">
-                                    <i class="bi bi-plus-lg"></i>
-                                    <p>Add new table</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--For Start Here-->
-                        <div class="col-lg-4 col-6 pb-3">
-                            <div class="cardItem text-center pb-0">
-                                <div class="card-body">
-                                    <object id="dining-svg" data="images/Dining table.svg" width="90%" height="80%" style="pointer-events: none;"></object>
-                                    <p>T1</p>
-                                    <p>4 Persons</p>
-                                    <button class="btn btn-outline-light" onclick="change(`edit_table.html`)">Edit table</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-6 pb-3">
-                            <div class="cardItem text-center pb-0">
-                                <div class="card-body">
-                                    <object id="dining-svg" data="images/Dining table.svg" width="90%" height="80%" style="pointer-events: none;"></object>
-                                    <p>T2</p>
-                                    <p>4 Persons</p>
-                                    <button class="btn btn-outline-light" onclick="change(`edit_table.html`)">Edit table</button>
-                                </div>
-                            </div>
+                        <hr class="w-100">
+                        <p class="pt-3 ps-1 primaryTextSetting">Name</p>
+                        <input type="text" class="form-control transparent-input py-2" id="tableName" placeholder=""
+                            name="tableName">
+                        <p class="pt-3 ps-1 primaryTextSetting">Person</p>
+                        <input type="text" class="form-control transparent-input py-2" id="person" placeholder=""
+                            name="person">
+                        <div class="pt-5 ps-0">
+                            <button class="btn paymentPrimary w-25 me-1">Save Changes</button>
+                            <button class="btn paymentSecondary w-25 ms-1">Discard Changes</button>
                         </div>
                     </div>
                 </div>

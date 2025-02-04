@@ -76,28 +76,29 @@
             <div class="d-flex h-auto">
                 <!--Setting Items-->
                 <div class="col-3 settingContainer">
-                    <div class="settingItems pt-3 pe-1 active" onclick="change(`table_management.html`)">
+                    <div class="settingItems pt-3 pe-1" onclick="change(`table_management.html`)">
                         <div class="row d-flex align-items-center">
                             <div class="col-md-3 col-4 text-end">
-                                <i class="bi bi-shop primaryTextSetting active"></i>
+                                <i class="bi bi-shop primaryTextSetting"></i>
                             </div>
-                            <div class="col-md-9 col-8 ps-md-2 ps-0 primaryTextSetting active">Table Management</div>
+                            <div class="col-md-9 col-8 ps-md-2 ps-0 primaryTextSetting">Table Management</div>
                         </div>
                         <div class="row d-flex pb-3">
                             <div class="col-md-3 col-4"></div>
                             <div class="col-md-9 col-8 ps-md-2 ps-0 secondaryText">Manage your table, etc</div>
                         </div>
                     </div>
-                    <div class="settingItems pt-3 pe-1" onclick="change(`product_management.html`)">
+                    <div class="settingItems pt-3 pe-1 active" onclick="change(`product_management.html`)">
                         <div class="row d-flex align-items-center">
                             <div class="col-md-3 col-4 text-end">
-                                <i class="bi bi-clipboard primaryTextSetting"></i>
+                                <i class="bi bi-clipboard primaryTextSetting active"></i>
                             </div>
-                            <div class="col-md-9 col-8 ps-md-2 ps-0 primaryTextSetting">Product Management</div>
+                            <div class="col-md-9 col-8 ps-md-2 ps-0 primaryTextSetting active">Product Management</div>
                         </div>
                         <div class="row d-flex pb-3">
                             <div class="col-md-3 col-4"></div>
-                            <div class="col-md-9 col-8 ps-md-2 ps-0 secondaryText">Manage your product, pricing, etc</div>
+                            <div class="col-md-9 col-8 ps-md-2 ps-0 secondaryText">Manage your product, pricing, etc
+                            </div>
                         </div>
                     </div>
                     <div class="settingItems pt-3 pe-1">
@@ -126,13 +127,33 @@
                     </div>
                 </div>
                 <div class="col-9 settingContainer ms-3">
-                    <h5 class="pt-4 ps-4 pb-3">Table Management</h5>
+                    <div class="d-flex justify-content-between align-items-center pt-4 ps-4 pb-3 pe-4">
+                        <h5>Product Management</h5>
+                        <div class="input-container">
+                            <i class="bi bi-search"></i>
+                            <input type="text" class="form-control transparent-input2 py-2" id="search"
+                                placeholder="Search for food, coffee, etc.." name="Username">
+                        </div>
+                    </div>
+
+                    <div class="menu-bar ps-4 pb-3 d-none d-sm-flex">
+                        <nav class="nav justify-content-start">
+                            <a class="nav-link active" href="#">Hot Dishes</a>
+                            <a class="nav-link" href="#">Cold Dishes</a>
+                            <a class="nav-link" href="#">Soup</a>
+                            <a class="nav-link" href="#">Grill</a>
+                            <a class="nav-link" href="#">Appetizer</a>
+                            <a class="nav-link" href="#">Dessert</a>
+                        </nav>
+                    </div>
+
                     <div class="row px-4">
                         <div class="col-lg-4 col-6 pb-3">
-                            <div class="cardSetting border-dashed text-center h-100 d-flex align-items-center" onclick="change(`add_table.html`)">
+                            <div class="cardSetting border-dashed text-center h-100 d-flex align-items-center"
+                                onclick="change(`add_table.html`)">
                                 <div class="card-body">
                                     <i class="bi bi-plus-lg"></i>
-                                    <p>Add new table</p>
+                                    <p>Add new dish</p>
                                 </div>
                             </div>
                         </div>
@@ -140,20 +161,38 @@
                         <div class="col-lg-4 col-6 pb-3">
                             <div class="cardItem text-center pb-0">
                                 <div class="card-body">
-                                    <object id="dining-svg" data="images/Dining table.svg" width="90%" height="80%" style="pointer-events: none;"></object>
-                                    <p>T1</p>
-                                    <p>4 Persons</p>
-                                    <button class="btn btn-outline-light" onclick="change(`edit_table.html`)">Edit table</button>
+                                    <div class="image-container mb-3 pt-4">
+                                        <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
+                                            class="rounded-circle img-fluid">
+                                    </div>
+                                    <!-- Deskripsi -->
+                                    <div class="d-lg-flex justify-content-lg-center">
+                                        <p class="mb-1 primaryText">Spicy seasoned seafood noodles</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="mb-3 secondaryText">$ 2.29</p>
+                                    </div>
+                                    <button class="btn btn-outline-light" onclick="change(`edit_table.html`)">Edit
+                                        dish</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-6 pb-3">
                             <div class="cardItem text-center pb-0">
                                 <div class="card-body">
-                                    <object id="dining-svg" data="images/Dining table.svg" width="90%" height="80%" style="pointer-events: none;"></object>
-                                    <p>T2</p>
-                                    <p>4 Persons</p>
-                                    <button class="btn btn-outline-light" onclick="change(`edit_table.html`)">Edit table</button>
+                                    <div class="image-container mb-3 pt-4">
+                                        <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
+                                            class="rounded-circle img-fluid">
+                                    </div>
+                                    <!-- Deskripsi -->
+                                    <div class="d-lg-flex justify-content-lg-center">
+                                        <p class="mb-1 primaryText">Spicy seasoned seafood noodles</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="mb-3 secondaryText">$ 2.29</p>
+                                    </div>
+                                    <button class="btn btn-outline-light" onclick="change(`edit_table.html`)">Edit
+                                        dish</button>
                                 </div>
                             </div>
                         </div>

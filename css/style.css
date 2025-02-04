@@ -731,7 +731,7 @@ option {
 
     .secondaryText {
         color: #ABBBC2;
-        font-size: 0.2rem;
+        font-size: 0.3rem;
     }
 }
 
@@ -773,7 +773,38 @@ option {
     color: #ffffff;
 }
 
-@media (max-width: 767.68px) {
+.card-body .primaryText{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card-body img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.card-body .secondaryText{
+    color: #b9b9b9; 
+    font-size: 1rem;
+}
+
+@media (max-width:1024px) and (min-width:768px) {
+    .card-body .primaryText, .card-body .secondaryText{
+        font-size: 0.8rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .card-body img{
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        margin: auto;
+    }
+}
+
+@media (max-width: 767.68px){
     .card-body i {
         font-size: 1rem;
         color: #ff6b6b;
@@ -781,6 +812,39 @@ option {
     }
     .card-body p, .card-body button{
         font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 767.68px) and (min-width: 540px) {
+    .card-body .primaryText, .card-body .secondaryText{
+        font-size: 0.6rem;
+    }
+    .card-body img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 539.98px) {
+    .card-body img{
+        width: 40px;
+        height: 40px;
+    }
+    .card-body .primaryText, .card-body .secondaryText{
+        font-size: 0.4rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .menu-bar .nav-scroll{
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px; /* Jarak antar item */
+        padding-bottom: 5px;
+        scrollbar-width: none;
+    }
+    .menu-bar .nav-scroll::-webkit-scrollbar {
+        display: none; /* Hilangkan scrollbar di Chrome */
     }
 }
 
