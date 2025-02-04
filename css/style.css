@@ -32,7 +32,7 @@ p {
     display: block;
 }
 
-.table-card:hover{
+.table-card:hover {
     transform: scale(1.05);
 }
 
@@ -66,6 +66,12 @@ p {
 .sidebar-item i {
     font-size: 2vw;
     color: #f07167;
+}
+
+@media (max-width: 767px) {
+    .sidebar-item i {
+        font-size: 1rem;
+    }
 }
 
 
@@ -116,8 +122,20 @@ p {
     font-size: 1vw;
 }
 
+@media (max-width: 767px) {
+
+    .sub-text,
+    .menu-bar a {
+        font-size: 0.5rem;
+    }
+}
+
 .cart-items {
     font-size: 2vw;
+}
+
+.cart-items:hover {
+    color: #EA7C69;
 }
 
 .cart-items-detail {
@@ -160,6 +178,22 @@ p {
         height: vh-5;
         /* Mengatur tinggi input */
         font-size: 0.5rem;
+        /* Mengatur ukuran font */
+        padding-left: 35px;
+
+    }
+}
+
+@media (max-width: 575.98px) {
+    .transparent-input2 {
+        background-color: #131822;
+        border: 1px solid transparent;
+        /* Membuat latar belakang transparan */
+        color: white;
+        /* Warna teks */
+        height: vh-2;
+        /* Mengatur tinggi input */
+        font-size: 0.4rem;
         /* Mengatur ukuran font */
         padding-left: 35px;
 
@@ -243,6 +277,7 @@ p {
 
 .menu-bar .nav-link:hover {
     color: white;
+    border-bottom: 2px solid #f07167;
 }
 
 .order {
@@ -357,6 +392,13 @@ img {
     width: 80%;
     height: 100%;
     background-color: #f07167;
+    border-radius: 15px;
+    border: 1px solid transparent;
+}
+
+.buttonAdd:hover {
+    background-color: #d65b57;
+    border-color: #d65b57;
 }
 
 /* Styling untuk tombol toggle */
@@ -386,12 +428,20 @@ button.btnMenu i {
     /* Ukuran ikon */
 }
 
+button.btnMenu i:hover {
+    color: #EA7C69;
+}
+
 .cancelButton {
     background: #58595C;
     border: 1px solid transparent;
     border-radius: 50%;
     width: fit-content;
     height: fit-content;
+}
+
+.cancelButton:hover {
+    border: 1px solid white;
 }
 
 .dropdown-input {
@@ -414,6 +464,16 @@ button.btnMenu i {
 .dropdown-input:focus {
     border: 1px solid white;
 }
+
+.dropdown-input:hover {
+    border: 1px solid white;
+}
+
+.dropdown-input option {
+    background-color: #1d2330;
+    color: white;
+}
+
 
 option {
     color: black;
@@ -441,6 +501,17 @@ option {
     color: gray;
 }
 
+.paymentPrimary:hover {
+    background-color: #E36744;
+    border: 3px solid #E36744;
+}
+
+.paymentSecondary:hover {
+    border: 3px solid white;
+    color: white;
+}
+
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .paymentPrimary {
         border: 3px solid transparent;
@@ -456,11 +527,6 @@ option {
         margin: 0;
     }
 
-    .paymentPrimary:hover {
-        background-color: #E36744;
-        border: 3px solid #EA7C69;
-    }
-
     .paymentSecondary {
         border: 3px solid #EA7C69;
         border-radius: 10px;
@@ -473,11 +539,6 @@ option {
         cursor: pointer;
         padding: 0;
         margin: 0;
-    }
-
-    .paymentSecondary:hover {
-        border: 3px solid white;
-        color: white;
     }
 }
 
@@ -496,11 +557,6 @@ option {
         margin: 0;
     }
 
-    .paymentPrimary:hover {
-        background-color: #E36744;
-        border: 3px solid #EA7C69;
-    }
-
     .paymentSecondary {
         border: 3px solid #EA7C69;
         border-radius: 10px;
@@ -513,52 +569,6 @@ option {
         cursor: pointer;
         padding: 0;
         margin: 0;
-    }
-
-    .paymentSecondary:hover {
-        border: 3px solid white;
-        color: white;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .paymentPrimary {
-        border: 3px solid transparent;
-        border-radius: 10px;
-        background-color: #EA7C69;
-        width: 70%;
-        height: 50px;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        cursor: pointer;
-        padding: 0;
-        margin: 0;
-    }
-
-    .paymentPrimary:hover {
-        background-color: #E36744;
-        border: 3px solid #EA7C69;
-    }
-
-    .paymentSecondary {
-        border: 3px solid #EA7C69;
-        border-radius: 10px;
-        background-color: transparent;
-        width: 70%;
-        height: 50px;
-        color: #EA7C69;
-        font-weight: bold;
-        text-align: center;
-        cursor: pointer;
-        padding: 0;
-        margin: 0;
-    }
-
-    .paymentSecondary:hover {
-        border: 3px solid white;
-        color: white;
     }
 }
 
@@ -577,11 +587,6 @@ option {
         margin: 0;
     }
 
-    .paymentPrimary:hover {
-        background-color: #E36744;
-        border: 3px solid #EA7C69;
-    }
-
     .paymentSecondary {
         border: 3px solid #EA7C69;
         border-radius: 10px;
@@ -595,14 +600,9 @@ option {
         padding: 0;
         margin: 0;
     }
-
-    .paymentSecondary:hover {
-        border: 3px solid white;
-        color: white;
-    }
 }
 
-@media (min-width: 0px) and (max-width: 576px) {
+@media (min-width: 0px) and (max-width: 575.98px) {
     .paymentPrimary {
         border: 3px solid transparent;
         border-radius: 10px;
@@ -617,11 +617,6 @@ option {
         margin: 0;
     }
 
-    .paymentPrimary:hover {
-        background-color: #E36744;
-        border: 3px solid #EA7C69;
-    }
-
     .paymentSecondary {
         border: 3px solid #EA7C69;
         border-radius: 10px;
@@ -634,11 +629,6 @@ option {
         cursor: pointer;
         padding: 0;
         margin: 0;
-    }
-
-    .paymentSecondary:hover {
-        border: 3px solid white;
-        color: white;
     }
 }
 
@@ -661,8 +651,12 @@ option {
 }
 
 .addOrderButton:hover {
-    background-color: #E36744;
-    border: 3px solid #EA7C69;
+    background-color: #d65b57;
+    border-color: #d65b57;
+}
+
+.detail-container .secondaryText {
+    font-size: 1rem;
 }
 
 @media (min-width: 769px) {
@@ -675,16 +669,6 @@ option {
         text-overflow: ellipsis;
         /* Tambahkan "..." di akhir */
     }
-
-    .primaryTextSetting {
-        font-size: 0.9rem;
-        color: white;
-    }
-
-    .secondaryText {
-        color: #ABBBC2;
-        font-size: 0.7rem;
-    }
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -696,16 +680,6 @@ option {
         /* Potong teks yang melebihi area */
         text-overflow: ellipsis;
         /* Tambahkan "..." di akhir */
-    }
-
-    .primaryTextSetting {
-        font-size: 0.6rem;
-        color: white;
-    }
-
-    .secondaryText {
-        color: #ABBBC2;
-        font-size: 0.4rem;
     }
 }
 
@@ -720,8 +694,45 @@ option {
     border-bottom: 2px solid #393C49;
 }
 
-.settingItems.active, .settingItems:hover {
+.settingItems.active,
+.settingItems:hover {
     background: rgba(255, 107, 107, 0.3);
+}
+
+@media (min-width: 1024px) {
+    .primaryTextSetting {
+        font-size: 0.9rem;
+        color: white;
+    }
+
+    .secondaryText {
+        color: #ABBBC2;
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023.99px) {
+    .primaryTextSetting {
+        font-size: 0.7rem;
+        color: white;
+    }
+
+    .secondaryText {
+        color: #ABBBC2;
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width:767.98px) {
+    .primaryTextSetting {
+        font-size: 0.4rem;
+        color: white;
+    }
+
+    .secondaryText {
+        color: #ABBBC2;
+        font-size: 0.2rem;
+    }
 }
 
 .primaryTextSetting.active {
@@ -762,6 +773,17 @@ option {
     color: #ffffff;
 }
 
+@media (max-width: 767.68px) {
+    .card-body i {
+        font-size: 1rem;
+        color: #ff6b6b;
+        margin-bottom: 10px;
+    }
+    .card-body p, .card-body button{
+        font-size: 0.5rem;
+    }
+}
+
 .btn-outline-light {
     background: rgba(255, 107, 107, 0.3);
     width: 100%;
@@ -775,32 +797,68 @@ option {
     color: white;
 }
 
-.forgetLink{
+.forgetLink {
     color: white;
     text-decoration: none;
 }
 
-.forgetLink:hover{
+.forgetLink:hover {
     text-decoration: underline;
 
 }
 
-.signLink{
+.signLink {
     color: white;
 }
 
-.signLink:hover{
+.signLink:hover {
     text-decoration: none;
 }
 
-.loginButton {
+.loginButton,
+.loginButton2 {
     background-color: #EA7C69;
     border: 1px solid transparent;
     color: white;
 }
 
-.loginButton:hover {
+.loginButton:hover,
+.loginButton2:hover {
     background-color: transparent;
     border: 1px solid #EA7C69;
     color: #EA7C69;
+}
+
+@media (max-width:576px) {
+    .loginButton2 {
+        font-size: 0.5rem;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.available:hover {
+    transform: scale(1);
+}
+
+.card {
+    background-color: #1d2330;
+}
+
+.trash {
+    color: red;
+}
+
+.trash:hover {
+    color: #EA7C69;
+}
+
+.cash {
+    color: #959595;
+}
+
+.cash:hover {
+    color: white;
 }
