@@ -30,7 +30,7 @@
             <a href="/order_list.html" class="sidebar-item">
                 <i class="bi-journal-richtext"></i>
             </a>
-            <a href="/table_management.html" class="sidebar-item active">
+            <a href="/table_management.html" class="sidebar-item">
                 <i class="bi-gear"></i>
             </a>
             <a href="#" class="sidebar-item">
@@ -61,7 +61,7 @@
             <a href="/order_list.html" class="sidebar-item">
                 <i class="bi-journal-richtext"></i>
             </a>
-            <a href="/table_management.html" class="sidebar-item active">
+            <a href="/table_management.html" class="sidebar-item">
                 <i class="bi-gear"></i>
             </a>
             <a href="#" class="sidebar-item">
@@ -130,69 +130,95 @@
                 <!--Setting Items-->
                 <div class="col-9 settingContainer ms-3">
                     <div class="d-flex justify-content-between align-items-center pt-4 ps-4 pb-3 pe-4">
-                        <h5>Product Management</h5>
+                        <h5 class="">Edit Dish</h5>
                         <button class="categoriesButton"><i class="bi bi-list"></i>Manage Categories</button>
                     </div>
-
-                    <div class="menu-bar ps-4 pb-3 d-none d-sm-flex">
-                        <nav class="nav justify-content-start">
-                            <a class="nav-link active" href="#">Hot Dishes</a>
-                            <a class="nav-link" href="#">Cold Dishes</a>
-                            <a class="nav-link" href="#">Soup</a>
-                            <a class="nav-link" href="#">Grill</a>
-                            <a class="nav-link" href="#">Appetizer</a>
-                            <a class="nav-link" href="#">Dessert</a>
-                        </nav>
-                    </div>
-
                     <div class="row px-4">
-                        <div class="col-lg-4 col-6 pb-3">
-                            <div class="cardSetting border-dashed text-center h-100 d-flex align-items-center"
-                                onclick="change(`add_food.html`)">
-                                <div class="card-body">
-                                    <i class="bi bi-plus-lg"></i>
-                                    <p>Add new dish</p>
+                        <hr class="w-100">
+                        <p class="pt-1 ps-1 primaryTextSetting mb-2">Name</p>
+                        <input type="text" class="form-control transparent-input py-2 primaryTextSetting" id="tableName"
+                            placeholder="" name="tableName">
+                        <p class="pt-2 ps-1 primaryTextSetting mb-2">Category</p>
+                        <select name="category" id="category"
+                            class="form-control transparent-input py-2 primaryTextSetting">
+                            <option value="" disabled selected></option>
+                            <option value="main_dish">Main Dish</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                        <p class="pt-2 ps-1 primaryTextSetting mb-2">Description</p>
+                        <textarea name="description" id="description"
+                            class="form-control transparent-input py-2 primaryTextSetting"></textarea>
+                        <div class="d-none d-md-flex row pt-3 ps-1">
+                            <div class="col-4 addFood">
+                                <div class="cardSetting border-dashed text-center h-100 d-flex align-items-center me-lg-4 me-md-2 me-0"
+                                    onclick="change(`add_food.html`)">
+                                    <div class="card-body">
+                                        <i class="bi bi-plus-lg"></i>
+                                        <p>Upload Image</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <p class="primaryTextSetting mb-2">Cost</p>
+                                <input type="text" class="form-control transparent-input py-2 primaryTextSetting"
+                                    id="cost" placeholder="" name="cost">
+                                <p class="pt-3 primaryTextSetting mb-2">Discount</p>
+                                <select name="discount" id="discount"
+                                    class="form-control transparent-input py-2 primaryTextSetting">
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="main_dish">By Percent</option>
+                                    <option value="dessert">By Price</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <p class="primaryTextSetting mb-2">Price</p>
+                                <input type="text" class="form-control transparent-input py-2 primaryTextSetting"
+                                    id="price" placeholder="" name="price">
+                                <p class="pt-3 primaryTextSetting mb-2">Discount Value</p>
+                                <input type="text" class="form-control transparent-input py-2 primaryTextSetting"
+                                    id="discountValue" placeholder="" name="discountValue">
+                            </div>
+                        </div>
+
+                        <!--Untuk Ukuran Layar 768px kebawah-->
+                        <div class="d-block d-md-none pt-3 ps-1">
+                            <div>
+                                <p class="primaryTextSetting mb-2">Image</p>
+                                <button class="categoriesButton d-flex align-items-center justify-content-center"
+                                    style="border-radius: 5px; height: 30px; width: 50px;">Upload Image</button>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col-6">
+                                    <p class="primaryTextSetting mb-2">Price</p>
+                                    <input type="text" class="form-control transparent-input py-2 primaryTextSetting"
+                                        id="price" placeholder="" name="price">
+                                </div>
+                                <div class="col-6">
+                                    <p class="primaryTextSetting mb-2">Cost</p>
+                                    <input type="text" class="form-control transparent-input py-2 primaryTextSetting"
+                                        id="cost" placeholder="" name="cost">
+                                </div>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col-6">
+                                    <p class="primaryTextSetting mb-2">Discount</p>
+                                    <select name="discount" id="discount"
+                                        class="form-control transparent-input py-2 primaryTextSetting">
+                                        <option value="" disabled selected>Select an option</option>
+                                        <option value="main_dish">By Percent</option>
+                                        <option value="dessert">By Price</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <p class="primaryTextSetting mb-2">Discount Value</p>
+                                    <input type="text" class="form-control transparent-input py-2 primaryTextSetting"
+                                    id="discountValue" placeholder="" name="discountValue">
                                 </div>
                             </div>
                         </div>
-                        <!--For Start Here-->
-                        <div class="col-lg-4 col-6 pb-3">
-                            <div class="cardItem text-center pb-0">
-                                <div class="card-body">
-                                    <div class="image-container mb-3 pt-4">
-                                        <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
-                                            class="rounded-circle img-fluid">
-                                    </div>
-                                    <!-- Deskripsi -->
-                                    <div class="d-lg-flex justify-content-lg-center">
-                                        <p class="mb-1 primaryText">Spicy seasoned seafood noodles</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <p class="mb-3 secondaryText">$ 2.29</p>
-                                    </div>
-                                    <button class="btn btn-outline-light" onclick="change(`edit_food.html`)">Edit
-                                        dish</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-6 pb-3">
-                            <div class="cardItem text-center pb-0">
-                                <div class="card-body">
-                                    <div class="image-container mb-3 pt-4">
-                                        <img src="images/Image 1.png" alt="Spicy seasoned seafood noodles"
-                                            class="rounded-circle img-fluid">
-                                    </div>
-                                    <!-- Deskripsi -->
-                                    <div class="d-lg-flex justify-content-lg-center">
-                                        <p class="mb-1 primaryText">Spicy seasoned seafood noodles</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <p class="mb-3 secondaryText">$ 2.29</p>
-                                    </div>
-                                    <button class="btn btn-outline-light" onclick="change(`edit_food.html`)">Edit
-                                        dish</button>
-                                </div>
-                            </div>
+                        <div class="settingButton pt-3 pt-md-5 ps-0">
+                            <button class="btn paymentPrimary me-1 primaryTextSetting">Save Changes</button>
+                            <button class="btn paymentSecondary ms-1 primaryTextSetting">Discard Changes</button>
                         </div>
                     </div>
                 </div>
