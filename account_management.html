@@ -30,7 +30,7 @@
             <a href="/order_list.html" class="sidebar-item">
                 <i class="bi-journal-richtext"></i>
             </a>
-            <a href="/table_management.html" class="sidebar-item active">
+            <a href="/table_management.html" class="sidebar-item">
                 <i class="bi-gear"></i>
             </a>
             <a href="#" class="sidebar-item">
@@ -61,7 +61,7 @@
             <a href="/order_list.html" class="sidebar-item">
                 <i class="bi-journal-richtext"></i>
             </a>
-            <a href="/table_management.html" class="sidebar-item active">
+            <a href="/table_management.html" class="sidebar-item">
                 <i class="bi-gear"></i>
             </a>
             <a href="#" class="sidebar-item">
@@ -76,12 +76,12 @@
             <div class="d-flex h-auto">
                 <!--Setting Items-->
                 <div class="col-3 settingContainer">
-                    <div class="settingItems pt-3 pe-1 active" onclick="change(`table_management.html`)">
+                    <div class="settingItems pt-3 pe-1" onclick="change(`table_management.html`)">
                         <div class="row d-flex align-items-center">
                             <div class="col-md-3 col-4 text-end">
-                                <i class="bi bi-shop primaryTextSetting active"></i>
+                                <i class="bi bi-shop primaryTextSetting"></i>
                             </div>
-                            <div class="col-md-9 col-8 ps-md-2 ps-0 primaryTextSetting active">Table Management</div>
+                            <div class="col-md-9 col-8 ps-md-2 ps-0 primaryTextSetting">Table Management</div>
                         </div>
                         <div class="row d-flex pb-3">
                             <div class="col-md-3 col-4"></div>
@@ -113,12 +113,12 @@
                             <div class="col-md-9 col-8 ps-md-2 ps-0 secondaryText">Configure Password, PIN, etc</div>
                         </div>
                     </div>
-                    <div class="settingItems pt-3 pe-1" onclick="change(`account_management.html`)">
+                    <div class="settingItems pt-3 pe-1 active" onclick="change(`account_management.html`)">
                         <div class="row d-flex align-items-center">
                             <div class="col-md-3 col-4 text-end">
-                                <i class="bi bi-person primaryTextSetting"></i>
+                                <i class="bi bi-person primaryTextSetting active"></i>
                             </div>
-                            <div class="col-md-9 col-8 ps-md-2 ps-0 primaryTextSetting">Account Management</div>
+                            <div class="col-md-9 col-8 ps-md-2 ps-0 primaryTextSetting active">Account Management</div>
                         </div>
                         <div class="row d-flex pb-3">
                             <div class="col-md-3 col-4"></div>
@@ -126,22 +126,43 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!--Setting Items-->
                 <div class="col-9 settingContainer ms-3">
-                    <h5 class="pt-2 ps-4 pb-3">Edit Table</h5>
+                    <div class="d-flex justify-content-between align-items-center pt-4 ps-4 pb-3 pe-4">
+                        <h5>Change Password</h5>
+                        <button class="categoriesButton"><i class="bi bi-plus"></i>Add New Account</button>
+                    </div>
                     <div class="row px-4">
                         <hr class="w-100">
-                        <p class="pt-1 ps-1 primaryTextSetting mb-2">Name</p>
-                        <input type="text" class="form-control transparent-input py-2 primaryTextSetting" id="tableName" placeholder=""
-                            name="tableName">
-                        <p class="pt-3 ps-1 primaryTextSetting mb-2">Person</p>
-                        <input type="text" class="form-control transparent-input py-2 primaryTextSetting" id="person" placeholder=""
-                            name="person">
-                        <div class="settingButton pt-md-5 pt-3 ps-0">
-                            <button class="btn paymentPrimary me-1 primaryTextSetting">Save Changes</button>
-                            <button class="btn paymentSecondary ms-1 primaryTextSetting">Discard Changes</button>
+                        <div class="row pb-2">
+                            <div class="col-4 primaryTextSetting">Name</div>
+                            <div class="col-4 primaryTextSetting">Site Role</div>
+                            <div class="col-4 primaryTextSetting">Actions</div>
                         </div>
+                        <hr class="w-100">
+                        <!--For Start Here-->
+                        <div class="row pb-0">
+                            <div class="col-4 primaryTextSetting">Admin</div>
+                            <div class="col-4 primaryTextSetting">Admin</div>
+                            <div class="col-4 primaryTextSetting d-flex align-items-center">
+                                <div class="mb-3"><i class="bi bi-pencil-square cash"></i></div>
+                                <div class="mb-3 mx-3" onclick="change(`payment.html`)"><i
+                                        class="bi bi-trash trash"></i></div>
+                            </div>
+                        </div>
+                        <hr class="w-100">
+                        <div class="row pb-0">
+                            <div class="col-4 primaryTextSetting">Admin</div>
+                            <div class="col-4 primaryTextSetting">Admin</div>
+                            <div class="col-4 primaryTextSetting d-flex align-items-center">
+                                <div class="mb-3"><i class="bi bi-pencil-square cash"></i></div>
+                                <div class="mb-3 mx-3" onclick="change(`payment.html`)"><i
+                                        class="bi bi-trash trash"></i></div>
+                            </div>
+                        </div>
+                        <hr class="w-100">
+
                     </div>
                 </div>
             </div>
