@@ -1,4 +1,4 @@
 change = (page) => {
-    window.location = `/${page}`;
+    window.location = `${page}`;
 }
 
