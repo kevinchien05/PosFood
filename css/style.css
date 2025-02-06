@@ -699,15 +699,33 @@ option {
     background: rgba(255, 107, 107, 0.3);
 }
 
+.loginButton{
+    height: 5vw;
+}
+
+
 @media (min-width: 1024px) {
     .primaryTextSetting {
         font-size: 0.9rem;
         color: white;
     }
 
+    .primaryTextLogin{
+        font-size: 1.3rem;
+        color: white;
+    }
+
     .secondaryText {
         color: #ABBBC2;
         font-size: 0.7rem;
+    }
+    .containerLogin img{
+        color: white;
+        width: 100%;
+        height: 100%;
+    }
+    .loginButton{
+        height: 4vw;
     }
 }
 
@@ -721,6 +739,11 @@ option {
         color: #ABBBC2;
         font-size: 0.5rem;
     }
+    .containerLogin img{
+        color: white;
+        width: 80%;
+        height: 80%;
+    }
 }
 
 @media (min-width: 0px) and (max-width:767.98px) {
@@ -732,6 +755,9 @@ option {
     .secondaryText {
         color: #ABBBC2;
         font-size: 0.3rem;
+    }
+    .loginButton{
+        height: 10vw;
     }
 }
 
