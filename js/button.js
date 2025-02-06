@@ -26,3 +26,4 @@ minClick = () => {
 change = (page) => {
     window.location = `/${page}`;
 }
+
