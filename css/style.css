@@ -130,10 +130,6 @@ p {
     }
 }
 
-.cart-items {
-    font-size: 2vw;
-}
-
 .cart-items:hover {
     color: #EA7C69;
 }
@@ -247,7 +243,6 @@ p {
     /* Adjust icon position */
     transform: translateY(-50%);
     /* Vertically center the icon */
-    font-size: 18px;
     /* Set icon size */
     color: white;
     /* Set icon color */
@@ -438,6 +433,20 @@ button.btnMenu i:hover {
     border-radius: 50%;
     width: fit-content;
     height: fit-content;
+}
+
+@media (max-width: 767.98px) {
+    .cancelButton {
+        background: #58595C;
+        border: 1px solid transparent;
+        border-radius: 100%;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .detail-container .primaryText{
+        font-size: 1rem;
+    }
 }
 
 .cancelButton:hover {
@@ -710,6 +719,14 @@ option {
         color: white;
     }
 
+    .input-container i{
+        font-size: 18px;
+    }
+
+    .cart-items {
+        font-size: 2vw;
+    }
+
     .primaryTextLogin{
         font-size: 1.3rem;
         color: white;
@@ -735,6 +752,14 @@ option {
         color: white;
     }
 
+    .input-container i{
+        font-size: 14px;
+    }
+
+    .cart-items {
+        font-size: 2vw;
+    }
+
     .secondaryText {
         color: #ABBBC2;
         font-size: 0.5rem;
@@ -746,10 +771,18 @@ option {
     }
 }
 
-@media (min-width: 0px) and (max-width:767.98px) {
+@media (max-width:767.98px) {
     .primaryTextSetting {
         font-size: 0.4rem;
         color: white;
+    }
+
+    .input-container i{
+        font-size: 8px;
+    }
+
+    .cart-items {
+        font-size: 3vw;
     }
 
     .secondaryText {
