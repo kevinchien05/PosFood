@@ -74,7 +74,7 @@
                 <h3>Jaegar Resto</h3>
                 <div class="d-flex justify-content-center align-items-center">
                     <i class="cart-items bi bi-cart mx-3" data-bs-toggle="offcanvas" data-bs-target="#cartMenu"
-                        style="cursor: pointer;"></i>
+                        style="cursor: pointer;" id="cart-items"></i>
                     <div class="input-container">
                         <i class="bi bi-search"></i>
                         <input type="text" class="form-control transparent-input2 primaryTextSetting" id="search"
@@ -163,7 +163,7 @@
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="cartMenuLabel">Order#0001</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                        aria-label="Close" id="btnClose"></button>
                 </div>
                 <div class="offcanvas-body d-flex flex-column">
                     <div class="dineContainer text-light mb-2">
@@ -233,6 +233,18 @@
     </div>
 
     <script src="js/button.js"></script>
+    <script>
+        let cartItems = document.getElementById("cart-items");
+        let btnMenu = document.getElementById('btnMenu');
+        let btnClose = document.getElementById('btnClose');
+        cartItems.onclick = function(){
+            btnMenu.style.display = "none";
+        };
+
+        btnClose.onclick = function(){
+            btnMenu.style.display = "block";
+        }
+    </script>
 
 </body>
 
