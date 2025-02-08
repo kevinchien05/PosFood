@@ -427,30 +427,10 @@ button.btnMenu i:hover {
     color: #EA7C69;
 }
 
-.cancelButton {
-    background: #58595C;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    width: fit-content;
-    height: fit-content;
-}
-
 @media (max-width: 767.98px) {
-    .cancelButton {
-        background: #58595C;
-        border: 1px solid transparent;
-        border-radius: 100%;
-        width: fit-content;
-        height: fit-content;
-    }
-
-    .detail-container .primaryText{
+    .detail-container .primaryText {
         font-size: 1rem;
     }
-}
-
-.cancelButton:hover {
-    border: 1px solid white;
 }
 
 .dropdown-input {
@@ -708,7 +688,7 @@ option {
     background: rgba(255, 107, 107, 0.3);
 }
 
-.loginButton{
+.loginButton {
     height: 5vw;
 }
 
@@ -719,7 +699,7 @@ option {
         color: white;
     }
 
-    .input-container i{
+    .input-container i {
         font-size: 18px;
     }
 
@@ -727,7 +707,7 @@ option {
         font-size: 2vw;
     }
 
-    .primaryTextLogin{
+    .primaryTextLogin {
         font-size: 1.3rem;
         color: white;
     }
@@ -736,12 +716,14 @@ option {
         color: #ABBBC2;
         font-size: 0.7rem;
     }
-    .containerLogin img{
+
+    .containerLogin img {
         color: white;
         width: 100%;
         height: 100%;
     }
-    .loginButton{
+
+    .loginButton {
         height: 4vw;
     }
 }
@@ -752,7 +734,7 @@ option {
         color: white;
     }
 
-    .input-container i{
+    .input-container i {
         font-size: 14px;
     }
 
@@ -764,7 +746,8 @@ option {
         color: #ABBBC2;
         font-size: 0.5rem;
     }
-    .containerLogin img{
+
+    .containerLogin img {
         color: white;
         width: 80%;
         height: 80%;
@@ -777,7 +760,7 @@ option {
         color: white;
     }
 
-    .input-container i{
+    .input-container i {
         font-size: 8px;
     }
 
@@ -789,7 +772,8 @@ option {
         color: #ABBBC2;
         font-size: 0.3rem;
     }
-    .loginButton{
+
+    .loginButton {
         height: 10vw;
     }
 }
@@ -877,11 +861,11 @@ option {
         padding-right: 5px;
     }
 
-    .addFood .card-body i{
+    .addFood .card-body i {
         font-size: 0.8rem;
     }
 
-    .addFood .card-body p{
+    .addFood .card-body p {
         font-size: 0.5rem;
     }
 
@@ -904,11 +888,11 @@ option {
         font-size: 0.5rem;
     }
 
-    .addFood .card-body i{
+    .addFood .card-body i {
         font-size: 0.5rem;
     }
 
-    .addFood .card-body p{
+    .addFood .card-body p {
         font-size: 0.3rem;
     }
 }
@@ -1084,13 +1068,33 @@ option {
 }
 
 @media (min-width: 768px) {
-    .settingButton .paymentPrimary, .settingButton .paymentSecondary{
+
+    .settingButton .paymentPrimary,
+    .settingButton .paymentSecondary {
         width: 25%;
     }
 }
 
 @media (max-width: 767.98px) {
-    .settingButton .paymentPrimary, .settingButton .paymentSecondary{
+
+    .settingButton .paymentPrimary,
+    .settingButton .paymentSecondary {
         width: 30%;
     }
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    background-color: #58595C;
+    border: 2px solid transparent;
+}
+
+.circle:hover {
+    border: 2px solid white;
+}
+
+.center-select {
+    text-align: center;
+    text-align-last: center;
 }
