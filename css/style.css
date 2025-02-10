@@ -1099,19 +1099,15 @@ option {
     text-align-last: center;
 }
 
- /* Make the container scrollable on small screens */
- .scrollable-container , .scrollable-container .itemContainerPayment2{
-    overflow-x: auto;
-    white-space: nowrap;
-}
+/* Make the container scrollable on small screens */
+@media (max-width: 576px) {
+    .container-fluid {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 
-/* Prevent wrapping inside columns */
-.scrollable-container .row, .scrollable-container .itemContainerPayment2 .row {
-    flex-wrap: nowrap;
-}
-
-/* Ensure text stays inside columns */
-.scrollable-container p, .scrollable-container .itemContainerPayment2 p {
-    margin: 0;
-    white-space: nowrap;
+    .inner-table {
+        min-width: 900px;
+        display: inline-block;
+    }
 }
