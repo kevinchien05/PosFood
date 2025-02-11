@@ -131,7 +131,7 @@
                 <div class="col-9 settingContainer ms-3">
                     <div class="d-flex justify-content-between align-items-center pt-4 ps-4 pb-3 pe-4">
                         <h5>Change Password</h5>
-                        <button class="categoriesButton"><i class="bi bi-plus"></i>Add New Account</button>
+                        <button class="categoriesButton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCenter"><i class="bi bi-plus"></i>Add New Account</button>
                     </div>
                     <div class="row px-4">
                         <hr class="w-100">
@@ -163,6 +163,18 @@
                         </div>
                         <hr class="w-100">
 
+                    </div>
+                </div>
+
+                <!--Offcanvas-->
+                <div class="offcanvas offcanvas-center fade" tabindex="-1" id="offcanvasCenter"
+                    aria-labelledby="offcanvasCenterLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasCenterLabel">Centered Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>This is a Bootstrap 5 offcanvas centered on the page.</p>
                     </div>
                 </div>
             </div>

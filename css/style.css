@@ -1101,7 +1101,7 @@ option {
 
 /* Make the container scrollable on small screens */
 @media (max-width: 576px) {
-    .container-fluid {
+    .scroll-container {
         overflow-x: auto;
         white-space: nowrap;
     }
@@ -1110,4 +1110,17 @@ option {
         min-width: 900px;
         display: inline-block;
     }
+}
+
+.offcanvas-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; /* Adjust width as needed */
+    max-width: 500px; /* Optional: Prevents it from being too wide */
+    height: auto;
+    max-height: 90vh; /* Prevents overflow */
+    position: fixed;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
