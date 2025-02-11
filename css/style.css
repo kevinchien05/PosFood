@@ -1112,15 +1112,25 @@ option {
     }
 }
 
-.offcanvas-center {
+.offcanvas-backdrop {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%; /* Adjust width as needed */
-    max-width: 500px; /* Optional: Prevents it from being too wide */
-    height: auto;
-    max-height: 90vh; /* Prevents overflow */
-    position: fixed;
+}
+
+.offcanvas-center {
+    width: 50%; /* Adjust as needed */
+    max-width: 500px;
+    height: 50%;
+    max-height: 90vh;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+}
+
+.btn-close{
+    color: white;
 }
