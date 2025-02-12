@@ -1135,6 +1135,7 @@ option {
         /* Adjust as needed */
         max-width: 500px;
         height: 30%;
+        min-height: 280px;
         border-radius: 10px;
         /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);*/
         top: 25%;
@@ -1148,6 +1149,7 @@ option {
         /* Adjust as needed */
         max-width: 500px;
         height: 35%;
+        min-height: 200px;
         border-radius: 10px;
         /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);*/
         top: 25%;
@@ -1170,4 +1172,64 @@ option {
 
 .offcanvas-title {
     color: white;
+}
+
+.offcanvasBTN {
+    background-color: #f07167;
+    border-color: #f07167;
+}
+
+.offcanvasBTN:hover {
+    background-color: #d65b57;
+    border-color: #d65b57;
+}
+
+#offcanvasAdd{
+    height: 50%;
+    min-height: 300px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #offcanvasAdd {
+        height: 22%;
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 768.98px) {
+    #offcanvasAdd {
+        height: 28%;
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 389.98px) {
+    #offcanvasAdd {
+        height: 30%;
+        min-height: 230px;
+    }
+}
+
+#offcanvasPayment{
+    width: 70%;
+    left: 15%;
+    max-width: none;
+}
+
+.offcanvas-body .row .card{
+    border: 2px solid white;
+}
+
+.offcanvas-body .row .card:hover{
+    border: 2px solid #EA7C69;
+    transform: scale(1);
+}
+
+.offcanvas-body .row i{
+    font-size: 4rem;
+}
+
+.offcanvas-body .row p{
+    font-size: 1rem;
+    color: #b9b9b9;
 }

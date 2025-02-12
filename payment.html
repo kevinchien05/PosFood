@@ -12,6 +12,40 @@
 </head>
 
 <body class="text-light">
+    <!--Offcanvas-->
+    <div class="offcanvas offcanvas-center fade" tabindex="-1" id="offcanvasPayment"
+        aria-labelledby="offcanvasCenterLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasCenterLabel">Select Payment Method</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-2 card text-center text-light p-3 ms-2" style="border-radius: 20px;">
+                    <!-- Deskripsi -->
+                    <i class="bi bi-cash" style="color: green;"></i>
+                    <p class="mb-0">Cash</p>
+                </div>
+                <div class="col-2 card text-center text-light p-3 ms-2" style="border-radius: 20px;">
+                    <!-- Deskripsi -->
+                    <i class="bi bi-cash" style="color: green;"></i>
+                    <p class="mb-0">Cash</p>
+                </div>
+                <div class="col-2 card text-center text-light p-3 ms-2" style="border-radius: 20px;">
+                    <!-- Deskripsi -->
+                    <i class="bi bi-cash" style="color: green;"></i>
+                    <p class="mb-0">Cash</p>
+                </div>
+                <div class="col-2 card text-center text-light p-3 ms-2" style="border-radius: 20px;">
+                    <!-- Deskripsi -->
+                    <i class="bi bi-cash" style="color: green;"></i>
+                    <p class="mb-0">Cash</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!-- Sidebar -->
     <div class="d-flex">
         <div class="sidebar d-none d-md-flex flex-column align-items-center ">
@@ -161,7 +195,8 @@
             <div class="row">
                 <div class="col-6"></div>
                 <div class="col-6 d-flex justify-content-start">
-                    <button class="paymentSecondary fs-6">Select Payment Method</button>
+                    <button class="paymentSecondary fs-6" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasPayment">Select Payment Method</button>
                 </div>
             </div>
             <div class="row mt-3">
