@@ -1119,18 +1119,55 @@ option {
 }
 
 .offcanvas-center {
-    width: 50%; /* Adjust as needed */
+    width: 50%;
+    /* Adjust as needed */
     max-width: 500px;
-    height: 50%;
-    max-height: 90vh;
+    height: 70%;
     border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    top: 25%;
+    /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);*/
     left: 25%;
-    right: 25%;
-    bottom: 25%;
+    top: 15%;
 }
 
-.btn-close{
+@media (min-width: 769px) and (max-width: 1024px) {
+    .offcanvas-center {
+        width: 50%;
+        /* Adjust as needed */
+        max-width: 500px;
+        height: 30%;
+        border-radius: 10px;
+        /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);*/
+        top: 25%;
+        left: 25%;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 768.98px) {
+    .offcanvas-center {
+        width: 80%;
+        /* Adjust as needed */
+        max-width: 500px;
+        height: 35%;
+        border-radius: 10px;
+        /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);*/
+        top: 25%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 389.98px) {
+    .offcanvas-center {
+        width: 80%;
+        /* Adjust as needed */
+        max-width: 500px;
+        height: 45%;
+        border-radius: 10px;
+        /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);*/
+        top: 25%;
+        left: 10%;
+    }
+}
+
+.offcanvas-title {
     color: white;
 }
