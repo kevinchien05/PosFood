@@ -13,6 +13,17 @@ offcanvasElement.addEventListener('hidden.bs.offcanvas', () => {
 
 const qntDetail = document.getElementById("qtyDetail");
 
+let holdInterval;
+const holdDelay = 100; // Adjust the speed of increment/decrement (milliseconds)
+
+function startHold(action) {
+    holdInterval = setInterval(action, holdDelay);
+}
+
+function stopHold() {
+    clearInterval(holdInterval);
+}
+
 addClick = () => {
     qntDetail.value = parseInt(qntDetail.value) + parseInt(1);
 }
@@ -24,5 +35,6 @@ minClick = () => {
 }
 
 change = (page) => {
-    window.location = `/${page}`;
+    window.location = `${page}`;
 }
+

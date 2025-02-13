@@ -130,10 +130,6 @@ p {
     }
 }
 
-.cart-items {
-    font-size: 2vw;
-}
-
 .cart-items:hover {
     color: #EA7C69;
 }
@@ -247,7 +243,6 @@ p {
     /* Adjust icon position */
     transform: translateY(-50%);
     /* Vertically center the icon */
-    font-size: 18px;
     /* Set icon size */
     color: white;
     /* Set icon color */
@@ -432,16 +427,10 @@ button.btnMenu i:hover {
     color: #EA7C69;
 }
 
-.cancelButton {
-    background: #58595C;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    width: fit-content;
-    height: fit-content;
-}
-
-.cancelButton:hover {
-    border: 1px solid white;
+@media (max-width: 767.98px) {
+    .detail-container .primaryText {
+        font-size: 1rem;
+    }
 }
 
 .dropdown-input {
@@ -699,15 +688,43 @@ option {
     background: rgba(255, 107, 107, 0.3);
 }
 
+.loginButton {
+    height: 5vw;
+}
+
+
 @media (min-width: 1024px) {
     .primaryTextSetting {
         font-size: 0.9rem;
         color: white;
     }
 
+    .input-container i {
+        font-size: 18px;
+    }
+
+    .cart-items {
+        font-size: 2vw;
+    }
+
+    .primaryTextLogin {
+        font-size: 1.3rem;
+        color: white;
+    }
+
     .secondaryText {
         color: #ABBBC2;
         font-size: 0.7rem;
+    }
+
+    .containerLogin img {
+        color: white;
+        width: 100%;
+        height: 100%;
+    }
+
+    .loginButton {
+        height: 4vw;
     }
 }
 
@@ -717,21 +734,47 @@ option {
         color: white;
     }
 
+    .input-container i {
+        font-size: 14px;
+    }
+
+    .cart-items {
+        font-size: 2vw;
+    }
+
     .secondaryText {
         color: #ABBBC2;
         font-size: 0.5rem;
     }
+
+    .containerLogin img {
+        color: white;
+        width: 80%;
+        height: 80%;
+    }
 }
 
-@media (min-width: 0px) and (max-width:767.98px) {
+@media (max-width:767.98px) {
     .primaryTextSetting {
         font-size: 0.4rem;
         color: white;
     }
 
+    .input-container i {
+        font-size: 8px;
+    }
+
+    .cart-items {
+        font-size: 3vw;
+    }
+
     .secondaryText {
         color: #ABBBC2;
         font-size: 0.3rem;
+    }
+
+    .loginButton {
+        height: 10vw;
     }
 }
 
@@ -818,11 +861,11 @@ option {
         padding-right: 5px;
     }
 
-    .addFood .card-body i{
+    .addFood .card-body i {
         font-size: 0.8rem;
     }
 
-    .addFood .card-body p{
+    .addFood .card-body p {
         font-size: 0.5rem;
     }
 
@@ -845,11 +888,11 @@ option {
         font-size: 0.5rem;
     }
 
-    .addFood .card-body i{
+    .addFood .card-body i {
         font-size: 0.5rem;
     }
 
-    .addFood .card-body p{
+    .addFood .card-body p {
         font-size: 0.3rem;
     }
 }
@@ -1025,13 +1068,168 @@ option {
 }
 
 @media (min-width: 768px) {
-    .settingButton .paymentPrimary, .settingButton .paymentSecondary{
+
+    .settingButton .paymentPrimary,
+    .settingButton .paymentSecondary {
         width: 25%;
     }
 }
 
 @media (max-width: 767.98px) {
-    .settingButton .paymentPrimary, .settingButton .paymentSecondary{
+
+    .settingButton .paymentPrimary,
+    .settingButton .paymentSecondary {
         width: 30%;
     }
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    background-color: #58595C;
+    border: 2px solid transparent;
+}
+
+.circle:hover {
+    border: 2px solid white;
+}
+
+.center-select {
+    text-align: center;
+    text-align-last: center;
+}
+
+/* Make the container scrollable on small screens */
+@media (max-width: 576px) {
+    .scroll-container {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .inner-table {
+        min-width: 900px;
+        display: inline-block;
+    }
+}
+
+.offcanvas-backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offcanvas-center {
+    width: 50%;
+    /* Adjust as needed */
+    max-width: 500px;
+    height: 70%;
+    border-radius: 10px;
+    /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);*/
+    left: 25%;
+    top: 15%;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .offcanvas-center {
+        width: 50%;
+        /* Adjust as needed */
+        max-width: 500px;
+        height: 30%;
+        min-height: 280px;
+        border-radius: 10px;
+        /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);*/
+        top: 25%;
+        left: 25%;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 768.98px) {
+    .offcanvas-center {
+        width: 80%;
+        /* Adjust as needed */
+        max-width: 500px;
+        height: 35%;
+        min-height: 200px;
+        border-radius: 10px;
+        /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);*/
+        top: 25%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 389.98px) {
+    .offcanvas-center {
+        width: 80%;
+        /* Adjust as needed */
+        max-width: 500px;
+        height: 45%;
+        border-radius: 10px;
+        /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);*/
+        top: 25%;
+        left: 10%;
+    }
+}
+
+.offcanvas-title {
+    color: white;
+}
+
+.offcanvasBTN {
+    background-color: #f07167;
+    border-color: #f07167;
+}
+
+.offcanvasBTN:hover {
+    background-color: #d65b57;
+    border-color: #d65b57;
+}
+
+#offcanvasAdd{
+    height: 50%;
+    min-height: 300px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #offcanvasAdd {
+        height: 22%;
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 768.98px) {
+    #offcanvasAdd {
+        height: 28%;
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 389.98px) {
+    #offcanvasAdd {
+        height: 30%;
+        min-height: 230px;
+    }
+}
+
+#offcanvasPayment{
+    width: 70%;
+    left: 15%;
+    max-width: none;
+}
+
+.offcanvas-body .row .card{
+    border: 2px solid white;
+}
+
+.offcanvas-body .row .card:hover{
+    border: 2px solid #EA7C69;
+    transform: scale(1);
+}
+
+.offcanvas-body .row i{
+    font-size: 4rem;
+}
+
+.offcanvas-body .row p{
+    font-size: 1rem;
+    color: #b9b9b9;
 }

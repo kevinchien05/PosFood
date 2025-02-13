@@ -18,22 +18,22 @@
             <a href="#" class="sidebar-item disabled-link">
                 <object id="dining-svg" data="images/home.svg"></object>
             </a>
-            <a href="/home.html" class="sidebar-item active">
+            <a class="sidebar-item active" onclick="change(`home.html`)">
                 <i class="bi-house"></i>
             </a>
-            <a href="/menu_available.html" class="sidebar-item">
+            <a class="sidebar-item" onclick="change(`menu_available.html`)">
                 <i class="bi-menu-button-wide"></i>
             </a>
-            <a href="#" class="sidebar-item">
+            <a class="sidebar-item" onclick="change(`#`)">
                 <i class="bi-pie-chart"></i>
             </a>
-            <a href="/order_list.html" class="sidebar-item">
+            <a class="sidebar-item" onclick="change(`order_list.html`)">
                 <i class="bi-journal-richtext"></i>
             </a>
-            <a href="/table_management.html" class="sidebar-item">
+            <a class="sidebar-item" onclick="change(`table_management.html`)">
                 <i class="bi-gear"></i>
             </a>
-            <a href="/login.html" class="sidebar-item">
+            <a class="sidebar-item" onclick="change(`index.html`)">
                 <i class="bi-box-arrow-left"></i>
             </a>
         </div>
@@ -49,29 +49,31 @@
             <a href="#" class="sidebar-item disabled-link">
                 <object id="dining-svg" data="images/home.svg"></object>
             </a>
-            <a href="/home.html" class="sidebar-item active">
+            <a class="sidebar-item active" onclick="change(`home.html`)">
                 <i class="bi-house"></i>
             </a>
-            <a href="/menu_available.html" class="sidebar-item">
+            <a class="sidebar-item" onclick="change(`menu_available.html`)">
                 <i class="bi-menu-button-wide"></i>
             </a>
-            <a href="#" class="sidebar-item">
+            <a class="sidebar-item" onclick="change(`#`)">
                 <i class="bi-pie-chart"></i>
             </a>
-            <a href="/order_list.html" class="sidebar-item">
+            <a class="sidebar-item" onclick="change(`order_list.html`)">
                 <i class="bi-journal-richtext"></i>
             </a>
-            <a href="/table_management.html" class="sidebar-item">
+            <a class="sidebar-item" onclick="change(`table_management.html`)">
                 <i class="bi-gear"></i>
             </a>
-            <a href="/login.html" class="sidebar-item">
+            <a class="sidebar-item" onclick="change(`index.html`)">
                 <i class="bi-box-arrow-left"></i>
             </a>
         </div>
 
         <div class="container-fluid p-3 flex-grow-1">
-            <button onclick="change('menu.html')" class="cancelButton d-flex justify-content-start align-items-center text-light ms-5 m-md-0">
-                <i class="bi-x h3 m-0"></i></button>
+            <div class="circle rounded-circle d-flex justify-content-center align-items-center text-light ms-5 m-md-0"
+                onclick="change(`menu.html`)">
+                <i class="bi-x h3 m-0"></i>
+            </div>
             <div class="image-container d-flex justify-content-center mb-3 p-3">
                 <img src="images/Image 1.png" alt="test">
             </div>
@@ -87,16 +89,18 @@
                     </div>
                     <div class="row qnt-wrapper d-flex justify-content-center align-items-center">
                         <div class="col-auto px-2">
-                            <button class="addContainer" onclick="minClick()">
+                            <button class="addContainer" onclick="minClick()" onpointerdown="startHold(minClick)"
+                                onpointerup="stopHold()" onpointerleave="stopHold()">
                                 <p class="h1">-</p>
                             </button>
                         </div>
                         <div class="col-auto px-2">
-                            <input type="text" class="addContainer form-control transparent-input4 text-center" id="qtyDetail"
-                                placeholder="" name="qty" value="1">
+                            <input type="text" class="addContainer form-control transparent-input4 text-center"
+                                id="qtyDetail" placeholder="" name="qty" value="1">
                         </div>
                         <div class="col-auto px-2">
-                            <button class="addContainer" onclick="addClick()">
+                            <button class="addContainer" onclick="addClick()" onpointerdown="startHold(addClick)"
+                                onpointerup="stopHold()" onpointerleave="stopHold()">
                                 <p class="h1">+</p>
                             </button>
                         </div>
