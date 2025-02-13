@@ -1026,7 +1026,7 @@ option {
     font-size: 1rem;
     display: flex;
     justify-content: space-between;
-    width: 25%;
+    width: auto;
     padding: 2px 20px 3px 20px;
 }
 
@@ -1232,4 +1232,10 @@ option {
 .offcanvas-body .row p{
     font-size: 1rem;
     color: #b9b9b9;
+}
+
+@media (max-width: 540px) {
+    .offcanvas-body .rowpayment i{
+        font-size: 2rem;
+    }
 }
