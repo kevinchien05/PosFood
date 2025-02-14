@@ -1184,7 +1184,7 @@ option {
     border-color: #d65b57;
 }
 
-#offcanvasAdd{
+#offcanvasAdd {
     height: 50%;
     min-height: 300px;
 }
@@ -1210,32 +1210,53 @@ option {
     }
 }
 
-#offcanvasPayment{
+#offcanvasPayment {
     width: 70%;
     left: 15%;
     max-width: none;
 }
 
-.offcanvas-body .row .card{
+.offcanvas-body .row .card {
     border: 2px solid white;
 }
 
-.offcanvas-body .row .card:hover{
+.offcanvas-body .row .card:hover {
     border: 2px solid #EA7C69;
     transform: scale(1);
 }
 
-.offcanvas-body .rowpayment i{
+.offcanvas-body .rowpayment i {
     font-size: 4rem;
 }
 
-.offcanvas-body .row p{
+.offcanvas-body .row p {
     font-size: 1rem;
     color: #b9b9b9;
 }
 
 @media (max-width: 540px) {
-    .offcanvas-body .rowpayment i{
+    .offcanvas-body .rowpayment i {
         font-size: 2rem;
     }
+}
+
+.table-card .dashboardPrimary {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.table-card .dashboardSecondary {
+    font-size: 1.3rem;
+}
+
+.dashboardBody .table-card {
+    border: 1px solid transparent;
+}
+
+.dashboardBody .table-card:hover{
+    transform: scale(1.0);
+}
+
+.dashboardBody .table-card .body{
+    color: white;
 }
