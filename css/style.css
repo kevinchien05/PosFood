@@ -1260,3 +1260,7 @@ option {
 .dashboardBody .table-card .body{
     color: white;
 }
+
+.trendingContainer .secondaryTextDashboard {
+    color: grey;
+}
