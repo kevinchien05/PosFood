@@ -1249,18 +1249,50 @@ option {
     font-size: 1.3rem;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .table-card .dashboardPrimary {
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
+    .table-card .dashboardSecondary {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .table-card .dashboardPrimary {
+        font-weight: bold;
+        font-size: 0.4rem;
+    }
+
+    .table-card .dashboardSecondary {
+        font-size: 0.4rem;
+    }
+}
+
 .dashboardBody .table-card {
     border: 1px solid transparent;
 }
 
-.dashboardBody .table-card:hover{
+.dashboardBody .table-card:hover {
     transform: scale(1.0);
 }
 
-.dashboardBody .table-card .body{
+.dashboardBody .table-card .body {
     color: white;
 }
 
 .trendingContainer .secondaryTextDashboard {
     color: grey;
+}
+
+@media (max-width: 767.98px) {
+    .trendingContainer .header h3 {
+        font-size: 1rem;
+    }
+
+    .trendingContainer .body {
+        font-size: 0.5rem;
+    }
 }
