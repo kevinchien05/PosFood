@@ -43,6 +43,9 @@ create table users(
  	constraint unique_image unique(image)
  );
  
+ alter table products 
+ add column status int default 0 not null;
+ 
  
  create table orders(
  	id serial not null,
@@ -55,8 +58,56 @@ create table users(
  	constraint fk_order_user foreign key (id_user) references users (id)
  );
  
+ alter table orders
+ add column status int default 0 not null;
+ 
+ 
  create table order_details(
  	id serial not null,
- 	
+ 	note text default '',
+ 	qty int not null,
+ 	id_order int not null,
+ 	id_product int not null,
+ 	primary key(id),
+ 	constraint fk_order_detail_order foreign key (id_order) references orders (id),
+ 	constraint fk_order_detail_product foreign key (id_product) references products (id)
  );
+ 
+ alter table order_details 
+ add column price int not null;
+ 
+  create table takeaways(
+ 	id serial not null,
+ 	order_date timestamp not null default current_timestamp,
+ 	total int not null,
+ 	id_user int not null,
+ 	primary key(id),
+ 	constraint fk_takeaway_user foreign key (id_user) references users (id)
+ );
+  
+  alter table takeaways
+  add column status int default 0 not null;
+  
+  create table takeaway_details(
+ 	id serial not null,
+ 	note text default '',
+ 	qty int not null,
+ 	id_takeaway int not null,
+ 	id_product int not null,
+ 	primary key(id),
+ 	constraint fk_takeaway_detail_takeaway foreign key (id_takeaway) references takeaways (id),
+ 	constraint fk_takeaway_detail_product foreign key (id_product) references products (id)
+ );
+  
+ alter table takeaway_details 
+ add column price int not null;
+  
+  insert into users (username,password,role)
+  values ('admin','admin','admin'),
+  		 ('staff','staff','staff'),
+  		 ('kasir','kasir','kasir'),
+  		 ('chef','chef','chef');
+ 
+  
+ 
  
